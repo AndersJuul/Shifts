@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using Shifts.Drivers.Contracts;
 
 namespace Shifts.Drivers.API.Controllers
 {
@@ -22,7 +23,7 @@ namespace Shifts.Drivers.API.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Driver value)
         {
         }
 

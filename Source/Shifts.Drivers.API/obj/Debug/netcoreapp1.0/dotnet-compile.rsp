@@ -168,6 +168,7 @@
 --reference:C:\Users\Anders\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\Anders\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Anders\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
+--reference:C:\projects\Shifts\Source\Shifts.Drivers.Contracts\bin\Debug\netstandard1.6\Shifts.Drivers.Contracts.dll
 --resource:"C:\projects\Shifts\Source\Shifts.Drivers.API\obj\Debug\netcoreapp1.0\Shifts.Drivers.APIdotnet-compile.deps.json",Shifts.Drivers.API.deps.json
 C:\projects\Shifts\Source\Shifts.Drivers.API\Program.cs
 C:\projects\Shifts\Source\Shifts.Drivers.API\Startup.cs

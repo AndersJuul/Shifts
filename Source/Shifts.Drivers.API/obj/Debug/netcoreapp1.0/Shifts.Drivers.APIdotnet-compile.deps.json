@@ -16,6 +16,7 @@
     ".NETCoreApp,Version=v1.0": {
       "Shifts.Drivers.API/1.0.0": {
         "dependencies": {
+          "Shifts.Drivers.Contracts": "1.0.0",
           "Microsoft.NETCore.App": "1.0.1",
           "Microsoft.AspNetCore.Mvc": "1.0.1",
           "Microsoft.AspNetCore.Routing": "1.0.1",
@@ -2515,11 +2516,20 @@
           "System.Xml.XDocument": "4.0.11",
           "System.Xml.XPath": "4.0.1"
         }
+      },
+      "Shifts.Drivers.Contracts/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "Shifts.Drivers.Contracts.dll": {}
+        }
       }
     },
     ".NETCoreApp,Version=v1.0/": {
       "Shifts.Drivers.API/1.0.0": {
         "dependencies": {
+          "Shifts.Drivers.Contracts": "1.0.0",
           "Microsoft.NETCore.App": "1.0.1",
           "Microsoft.AspNetCore.Mvc": "1.0.1",
           "Microsoft.AspNetCore.Routing": "1.0.1",
@@ -4016,6 +4026,9 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Text.Encoding": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.IO.Compression.ZipFile.dll": {}
         }
       },
       "System.IO.FileSystem/4.0.1": {
@@ -4901,6 +4914,14 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
+        }
+      },
+      "Shifts.Drivers.Contracts/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "runtime": {
+          "Shifts.Drivers.Contracts.dll": {}
         }
       }
     }
@@ -5840,6 +5861,11 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-FLhdYJx4331oGovQypQ8JIw2kEmNzCsjVOVYY/16kZTUoquZG85oVn7yUhBE2OZt1yGPSXAL0HTEfzjlbNpM7Q=="
+    },
+    "Shifts.Drivers.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

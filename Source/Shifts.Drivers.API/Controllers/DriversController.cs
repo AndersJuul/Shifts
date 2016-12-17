@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 using Shifts.Drivers.Contracts;
 
 namespace Shifts.Drivers.API.Controllers
@@ -7,6 +9,12 @@ namespace Shifts.Drivers.API.Controllers
     [Route("api/[controller]")]
     public class DriversController : Controller
     {
+        private AppSettings _appSettings;
+
+        public DriversController(IOptions<AppSettings> appSettings)
+        {
+            _appSettings = appSettings.Value;
+        }
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -24,6 +25,11 @@ namespace Shifts.Drivers.API
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
+            services.Configure<AppSettings>(appSettings =>
+            {
+appSettings.                ConnectionString = Configuration.GetConnectionString("appcon");
+            });
+
             services.AddMvc();
         }
 
@@ -32,8 +38,14 @@ namespace Shifts.Drivers.API
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-
+            
             app.UseMvc();
         }
     }
+
+    public class AppSettings
+    {
+        public string ConnectionString { get; set; }
+    }
+
 }

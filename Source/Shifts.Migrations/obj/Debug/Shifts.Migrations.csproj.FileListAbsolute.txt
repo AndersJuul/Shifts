@@ -6,3 +6,4 @@ C:\projects\Shifts\Source\Shifts.Migrations\bin\Debug\DbUp.pdb
 C:\projects\Shifts\Source\Shifts.Migrations\bin\Debug\DbUp.xml
 C:\projects\Shifts\Source\Shifts.Migrations\obj\Debug\Shifts.Migrations.exe
 C:\projects\Shifts\Source\Shifts.Migrations\obj\Debug\Shifts.Migrations.pdb
+C:\projects\Shifts\Source\Shifts.Migrations\obj\Debug\Shifts.Migrations.csprojResolveAssemblyReference.cache

@@ -1,0 +1,5 @@
+C:\projects\Shifts\Source\Shifts.Tests\bin\Debug\Shifts.Tests.dll
+C:\projects\Shifts\Source\Shifts.Tests\bin\Debug\Shifts.Tests.pdb
+C:\projects\Shifts\Source\Shifts.Tests\obj\Debug\Shifts.Tests.csprojResolveAssemblyReference.cache
+C:\projects\Shifts\Source\Shifts.Tests\obj\Debug\Shifts.Tests.dll
+C:\projects\Shifts\Source\Shifts.Tests\obj\Debug\Shifts.Tests.pdb

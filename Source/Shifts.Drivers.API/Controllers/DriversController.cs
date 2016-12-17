@@ -1,24 +1,23 @@
 ﻿using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Options;
-using Shifts.Drivers.Contracts;
+using System.Web.Http;
 using Dapper;
+using Shifts.Drivers.Contracts;
 
 namespace Shifts.Drivers.API.Controllers
 {
-    [Route("api/[controller]")]
-    public class DriversController : Controller
+    public class DriversController : ApiController
     {
-        private AppSettings _appSettings;
+        private readonly ConnectionStringSettings _connectionString;
 
-        public DriversController(IOptions<AppSettings> appSettings)
+        public DriversController()
         {
-            _appSettings = appSettings.Value;
+            _connectionString = ConfigurationManager.ConnectionStrings["appcon"];
         }
+
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
@@ -27,7 +26,7 @@ namespace Shifts.Drivers.API.Controllers
         }
 
         // GET api/values/5
-        [HttpGet("{id}")]
+        [HttpGet]
         public string Get(int id)
         {
             return "driver";
@@ -39,24 +38,26 @@ namespace Shifts.Drivers.API.Controllers
         {
             var connection = new SqlConnection
             {
-                ConnectionString = _appSettings.ConnectionString
+                ConnectionString = "Server=(local)\\SqlExpress; Database=Shifts.Drivers; Trusted_connection=true"
             };
             await connection
                 .OpenAsync(CancellationToken.None)
                 .ConfigureAwait(false);
 
             await connection
-                .ExecuteAsync("insert into Drivers (Name) values (@Name)", driver, null, 10);
+                .ExecuteAsync("insert into Drivers (Name) values (@Name)", driver, null, 10)
+                .ConfigureAwait(false);
+
         }
 
         // PUT api/values/5
-        [HttpPut("{id}")]
+        [HttpPut]
         public void Put(int id, [FromBody] string value)
         {
         }
 
         // DELETE api/values/5
-        [HttpDelete("{id}")]
+        [HttpDelete]
         public void Delete(int id)
         {
         }

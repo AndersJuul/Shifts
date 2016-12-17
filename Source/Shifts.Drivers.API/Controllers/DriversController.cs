@@ -1,8 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Threading;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using Shifts.Drivers.Contracts;
+using Dapper;
 
 namespace Shifts.Drivers.API.Controllers
 {
@@ -26,13 +30,23 @@ namespace Shifts.Drivers.API.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value";
+            return "driver";
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] Driver value)
+        public async Task Post([FromBody] Driver driver)
         {
+            var connection = new SqlConnection
+            {
+                ConnectionString = _appSettings.ConnectionString
+            };
+            await connection
+                .OpenAsync(CancellationToken.None)
+                .ConfigureAwait(false);
+
+            await connection
+                .ExecuteAsync("insert into Drivers (Name) values (@Name)", driver, null, 10);
         }
 
         // PUT api/values/5

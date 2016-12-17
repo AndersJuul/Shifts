@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>dbup</id>
+    <version>3.3.5</version>
+    <title>DbUp</title>
+    <authors>Paul Stovell, Jim Burger, Jake Ginnivan, Damian Maclennan</authors>
+    <owners>Paul Stovell, Jim Burger, Jake Ginnivan, Damian Maclennan</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
+    <projectUrl>http://dbup.github.com/</projectUrl>
+    <iconUrl>https://raw.github.com/DbUp/DbUp/master/src/Information/dbup-icon.png</iconUrl>
+    <description>DbUp makes it easy to deploy and upgrade SQL Server databases by running change scripts.</description>
+    <releaseNotes>https://github.com/DbUp/DbUp/releases</releaseNotes>
+    <language>en-US</language>
+  </metadata>
+</package>

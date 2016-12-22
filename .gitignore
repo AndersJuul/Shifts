@@ -1,0 +1,7 @@
+packages/
+Paket/
+Bin/
+Obj/
+.cache
+_NCrunch_Shifts
+.vs

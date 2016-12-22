@@ -1,12 +1,12 @@
 ﻿using System;
-//using NUnit.Framework;
+using NUnit.Framework;
 
 namespace Shifts.Tests
 {
-    //[TestFixture]
+    [TestFixture]
     public class NUnitTest1
     {
-        //[Test]
+        [Test]
         public void TestMethod1()
         {
         }

@@ -5,7 +5,7 @@ using DbUp;
 
 namespace Shifts.Migrations
 {
-    internal class Program
+    public class Program
     {
         private static int Main(string[] args)
         {

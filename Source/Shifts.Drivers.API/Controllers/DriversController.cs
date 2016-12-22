@@ -36,10 +36,8 @@ namespace Shifts.Drivers.API.Controllers
         [HttpPost]
         public async Task Post([FromBody] Driver driver)
         {
-            var connection = new SqlConnection
-            {
-                ConnectionString = "Server=(local)\\SqlExpress; Database=Shifts.Drivers; Trusted_connection=true"
-            };
+            var connection = new SqlConnection(_connectionString.ConnectionString);
+
             await connection
                 .OpenAsync(CancellationToken.None)
                 .ConfigureAwait(false);

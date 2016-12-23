@@ -14,8 +14,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.Migrations", "Shifts
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.Tests", "Shifts.Tests\Shifts.Tests.csproj", "{067456C0-086C-46A8-B37F-1405717B7BFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.Drivers.API", "Shifts.Drivers.API\Shifts.Drivers.API.csproj", "{BF015015-C41E-4ACA-91BB-F7437277CCB8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.Drivers.Services", "Shifts.Drivers.Services\Shifts.Drivers.Services.csproj", "{A24FF1AA-E6BD-46C0-88A0-135C9D3428C7}"
 EndProject
 Global
@@ -36,10 +34,6 @@ Global
 		{067456C0-086C-46A8-B37F-1405717B7BFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{067456C0-086C-46A8-B37F-1405717B7BFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{067456C0-086C-46A8-B37F-1405717B7BFC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BF015015-C41E-4ACA-91BB-F7437277CCB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF015015-C41E-4ACA-91BB-F7437277CCB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF015015-C41E-4ACA-91BB-F7437277CCB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF015015-C41E-4ACA-91BB-F7437277CCB8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A24FF1AA-E6BD-46C0-88A0-135C9D3428C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A24FF1AA-E6BD-46C0-88A0-135C9D3428C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A24FF1AA-E6BD-46C0-88A0-135C9D3428C7}.Release|Any CPU.ActiveCfg = Release|Any CPU

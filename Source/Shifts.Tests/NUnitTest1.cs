@@ -1,5 +1,4 @@
-﻿using System;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace Shifts.Tests
 {
@@ -10,6 +9,7 @@ namespace Shifts.Tests
         public void TestMethod1()
         {
         }
+
         [Test]
         public void TestMethod2()
         {

@@ -90,7 +90,9 @@ NUGET
     Microsoft.Web.Infrastructure (1.0) - framework: >= net461
     Modernizr (2.6.2) - framework: >= net461
     Newtonsoft.Json (6.0.4) - framework: >= net461
+    NuGet.CommandLine (3.4.3)
     NUnit (2.6.4)
+    OctoPack (3.4.6) - framework: >= net461
     Owin (1.0) - framework: >= net461
     Respond (1.2) - framework: >= net461
     WebGrease (1.5.2) - framework: >= net461

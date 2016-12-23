@@ -5,3 +5,17 @@ Obj/
 .cache
 _NCrunch_Shifts
 .vs
+/build/
+*.suo
+*.user
+_ReSharper.*/
+*.sdf
+bin/
+obj/
+Debug/
+Release/
+*.opensdf
+*.log
+TestResult.xml
+*.VisualState.xml
+*.cache

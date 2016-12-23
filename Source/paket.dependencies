@@ -39,4 +39,4 @@ nuget Newtonsoft.Json 6.0.4 framework: >= net461
 nuget Owin 1.0 framework: >= net461
 nuget Respond 1.2.0 framework: >= net461
 nuget WebGrease 1.5.2 framework: >= net461
-nuget NUnit
+nuget NUnit 2.6.4

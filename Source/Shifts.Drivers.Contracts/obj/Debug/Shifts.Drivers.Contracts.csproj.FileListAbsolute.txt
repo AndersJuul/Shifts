@@ -1,4 +1,0 @@
-C:\projects\Shifts\Source\Shifts.Drivers.Contracts\bin\Debug\Shifts.Drivers.Contracts.dll
-C:\projects\Shifts\Source\Shifts.Drivers.Contracts\bin\Debug\Shifts.Drivers.Contracts.pdb
-C:\projects\Shifts\Source\Shifts.Drivers.Contracts\obj\Debug\Shifts.Drivers.Contracts.dll
-C:\projects\Shifts\Source\Shifts.Drivers.Contracts\obj\Debug\Shifts.Drivers.Contracts.pdb

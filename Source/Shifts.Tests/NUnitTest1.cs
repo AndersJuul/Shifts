@@ -10,6 +10,10 @@ namespace Shifts.Tests
         public void TestMethod1()
         {
         }
+        [Test]
+        public void TestMethod2()
+        {
+        }
     }
 
     //public class DriversControllerTests

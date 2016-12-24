@@ -37,8 +37,8 @@ nuget Microsoft.Web.Infrastructure 1.0.0.0 framework: >= net461
 nuget Modernizr 2.6.2 framework: >= net461
 nuget Newtonsoft.Json 6.0.4 framework: >= net461
 nuget NuGet.CommandLine
+nuget octopack
 nuget Owin 1.0 framework: >= net461
 nuget Respond 1.2.0 framework: >= net461
 nuget WebGrease 1.5.2 framework: >= net461
 nuget NUnit 2.6.4
-nuget OctoPack 3.4.6 framework: >= net461

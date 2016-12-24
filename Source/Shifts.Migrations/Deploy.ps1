@@ -1,1 +1,1 @@
-& .\bin\relese\Shifts.Migrations.exe
+& .\Shifts.Migrations.exe

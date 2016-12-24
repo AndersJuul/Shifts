@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Linq;
 using System.Reflection;
 using DbUp;
@@ -11,7 +12,7 @@ namespace Shifts.Migrations
         {
             var connectionString =
                 args.FirstOrDefault()
-                ?? "Server=(local)\\SqlExpress; Database=Shifts.Drivers; Trusted_connection=true";
+                ?? "Server=(local)\\SqlExpress; Database="+ConfigurationManager.AppSettings["db-name"]+"; Trusted_connection=true";
 
             EnsureDatabase.For.SqlDatabase(connectionString);
 

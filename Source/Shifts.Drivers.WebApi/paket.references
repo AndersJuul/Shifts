@@ -1,3 +1,8 @@
-﻿Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+﻿Microsoft.AspNet.Identity.Core
+Microsoft.AspNet.Identity.EntityFramework
+Microsoft.AspNet.Identity.Owin
+Microsoft.AspNet.WebApi
+Microsoft.CodeDom.Providers.DotNetCompilerPlatform
 Microsoft.Net.Compilers
+Microsoft.Owin.Host.SystemWeb
 octopack

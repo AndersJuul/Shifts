@@ -1,1 +1,0 @@
-& .\Shifts.Migrations.exe

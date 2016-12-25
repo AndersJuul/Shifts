@@ -19,9 +19,8 @@ namespace Shifts.Drivers.Migrations
             var loggerConfig = new LoggerConfiguration()
                 .MinimumLevel.Verbose()
                 .Enrich.With<EnvironmentUserNameEnricher>()
-                .Enrich.WithProperty("Version", Environment.Version.ToString())
+                .Enrich.WithProperty("Version", ConfigurationManager.AppSettings["version"])
                 .Enrich.WithProperty("ProcessName", assemblyName.Name)
-                .Enrich.WithProperty("V2", assemblyName.Version)
                 .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri("http://localhost:9200"))
                 {
                     AutoRegisterTemplate = true

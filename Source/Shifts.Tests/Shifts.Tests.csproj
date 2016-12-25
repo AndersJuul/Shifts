@@ -46,12 +46,6 @@
   <ItemGroup>
     <Folder Include="UnitTests\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Shifts.Migrations\Shifts.Migrations.csproj">
-      <Project>{a1b11739-e73b-4a3f-a997-9832fa7c7d8b}</Project>
-      <Name>Shifts.Migrations</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

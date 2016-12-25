@@ -1,0 +1,3 @@
+﻿SeriLog
+Serilog.Sinks.ElasticSearch
+Serilog.Enrichers.Environment

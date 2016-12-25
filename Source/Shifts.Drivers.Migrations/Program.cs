@@ -7,6 +7,7 @@ using Serilog;
 using Serilog.Context;
 using Serilog.Enrichers;
 using Serilog.Sinks.Elasticsearch;
+using Shifts.Services;
 
 namespace Shifts.Drivers.Migrations
 {
@@ -15,19 +16,9 @@ namespace Shifts.Drivers.Migrations
         private static int Main(string[] args)
         {
             // Create Logger
-            var assemblyName = System.Reflection.Assembly.GetExecutingAssembly().GetName();
-            var loggerConfig = new LoggerConfiguration()
-                .MinimumLevel.Verbose()
-                .Enrich.With<EnvironmentUserNameEnricher>()
-                .Enrich.WithProperty("Version", ConfigurationManager.AppSettings["version"])
-                .Enrich.WithProperty("ProcessName", assemblyName.Name)
-                .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri("http://localhost:9200"))
-                {
-                    AutoRegisterTemplate = true
-                });
+            EsLogger.SetupGlobalLogger();
 
-            var logger = loggerConfig.CreateLogger();
-            logger.Error("Running Migrations");
+            Log.Logger.Error("Running Migrations");
 
             var connectionString =
                 args.FirstOrDefault()
@@ -61,5 +52,6 @@ namespace Shifts.Drivers.Migrations
             Console.ResetColor();
             return 0;
         }
+
     }
 }

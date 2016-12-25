@@ -3,7 +3,7 @@
   <metadata>
     <id>Shifts.Drivers.Migrations</id>
     <title>Migrations</title>
-    <version>$OctoPackPackageVersion$</version>
+    <version>$version$</version>
     <authors>Anders Juul</authors>
     <owners>Anders Juul</owners>
     <licenseUrl>http://yourcompany.com</licenseUrl>

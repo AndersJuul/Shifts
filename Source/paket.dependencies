@@ -45,3 +45,6 @@ nuget DbUp
 nuget jQuery 1.10.2 framework: >= net461
 nuget jQuery.Validation 1.11.1 framework: >= net461
 nuget OctoPack
+nuget Serilog framework: >= net461
+nuget Serilog.Sinks.ElasticSearch framework: >= net461
+nuget Serilog.Enrichers.Environment framework: >= net461

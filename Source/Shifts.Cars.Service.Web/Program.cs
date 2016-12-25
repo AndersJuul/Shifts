@@ -22,13 +22,13 @@ namespace Shifts.Cars.Service.Web
 
                 // Now define some attributes of the service overall
                 //
-                factory.RunAsLocalSystem();
+                //factory.RunAsLocalSystem();
 
                 // Provide the metadata to the service control
                 //
-                factory.SetServiceName("self-hosted-angular2-service");
-                factory.SetDisplayName("Self-hosted Angular 2 service");
-                factory.SetDescription("A custom service that hosts an Angular 2 website using OWIN");
+                //factory.SetServiceName("self-hosted-angular2-service");
+                //factory.SetDisplayName("Self-hosted Angular 2 service");
+                //factory.SetDescription("A custom service that hosts an Angular 2 website using OWIN");
 
             });
         }

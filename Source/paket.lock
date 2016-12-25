@@ -39,6 +39,10 @@ NUGET
       Microsoft.AspNet.WebApi.Core (>= 5.2.3 < 5.3)
       Microsoft.Owin (>= 2.0.2)
       Owin (>= 1.0)
+    Microsoft.AspNet.WebApi.OwinSelfHost (5.2.3) - framework: >= net461
+      Microsoft.AspNet.WebApi.Owin (>= 5.2.3 < 5.3)
+      Microsoft.Owin.Host.HttpListener (>= 2.0.2)
+      Microsoft.Owin.Hosting (>= 2.0.2)
     Microsoft.AspNet.WebApi.WebHost (5.2.3) - framework: >= net461
       Microsoft.AspNet.WebApi.Core (>= 5.2.3 < 5.3)
     Microsoft.AspNet.WebPages (3.2.3) - framework: >= net461
@@ -52,7 +56,11 @@ NUGET
     Microsoft.Net.Compilers (1.1.1) - framework: >= net461
     Microsoft.Owin (3.0.1) - framework: >= net461
       Owin (>= 1.0)
+    Microsoft.Owin.Host.HttpListener (3.0.1) - framework: >= net461
     Microsoft.Owin.Host.SystemWeb (3.0.1) - framework: >= net461
+      Microsoft.Owin (>= 3.0.1)
+      Owin (>= 1.0)
+    Microsoft.Owin.Hosting (3.0.1) - framework: >= net461
       Microsoft.Owin (>= 3.0.1)
       Owin (>= 1.0)
     Microsoft.Owin.Security (3.0.1) - framework: >= net461
@@ -95,6 +103,7 @@ NUGET
     OctoPack (3.4.6)
     Owin (1.0) - framework: >= net461
     Respond (1.2) - framework: >= net461
+    Topshelf (4.0.3)
     WebGrease (1.5.2) - framework: >= net461
       Antlr (>= 3.4.1.9004)
       Newtonsoft.Json (>= 5.0.4)

@@ -19,7 +19,7 @@ namespace Shifts.Drivers.Web.Lib
         {
             Console.WriteLine("ServiceHost started");
 
-            _baseAddress = ConfigurationManager.AppSettings["shifts.cars.api.url"];    
+            _baseAddress = ConfigurationManager.AppSettings["shifts.drivers.api.url"];    
             _server = WebApp.Start<Startup>(url: _baseAddress);
 
             Console.WriteLine($"Server running at {_baseAddress}");

@@ -16,7 +16,7 @@ namespace Shifts.Cars.Web.Lib
             Log.Logger.Information("ServiceHost starting");
 
             _baseAddress = ConfigurationManager.AppSettings["shifts.cars.api.url"];    
-            //_server = WebApp.Start<Startup>(url: _baseAddress);
+            _server = WebApp.Start<Startup>(url: _baseAddress);
 
             Log.Logger.Information($"Server running at {_baseAddress}");
         }

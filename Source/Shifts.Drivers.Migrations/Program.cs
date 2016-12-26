@@ -3,6 +3,11 @@ using System.Configuration;
 using System.Linq;
 using System.Reflection;
 using DbUp;
+using Serilog;
+using Serilog.Context;
+using Serilog.Enrichers;
+using Serilog.Sinks.Elasticsearch;
+using Shifts.Services;
 
 namespace Shifts.Drivers.Migrations
 {
@@ -10,10 +15,15 @@ namespace Shifts.Drivers.Migrations
     {
         private static int Main(string[] args)
         {
+            // Create Logger
+            EsLogger.SetupGlobalLogger();
+
+            Log.Logger.Error("Running Migrations");
+
             var connectionString =
                 args.FirstOrDefault()
                 ?? ConfigurationManager.ConnectionStrings["shiftDriversDb"].ConnectionString;
-                //"Server=(local)\\SqlExpress; Database="+ConfigurationManager.AppSettings["db-name"]+"; Trusted_connection=true";
+            //"Server=(local)\\SqlExpress; Database="+ConfigurationManager.AppSettings["db-name"]+"; Trusted_connection=true";
 
             EnsureDatabase.For.SqlDatabase(connectionString);
 
@@ -42,5 +52,6 @@ namespace Shifts.Drivers.Migrations
             Console.ResetColor();
             return 0;
         }
+
     }
 }

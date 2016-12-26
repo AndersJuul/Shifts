@@ -14,7 +14,7 @@ namespace Shifts.Drivers.Web.Lib
 
         public ServiceHost()
         {
-            Console.WriteLine("ServiceHost constructed");
+            Log.Logger.Information("ServiceHost constructed");
         }
 
         public void Start()

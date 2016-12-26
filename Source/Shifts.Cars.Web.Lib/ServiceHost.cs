@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using Microsoft.Owin.Hosting;
+using Serilog;
 
 namespace Shifts.Cars.Web.Lib
 {
@@ -12,32 +13,32 @@ namespace Shifts.Cars.Web.Lib
 
         public ServiceHost()
         {
-            Console.WriteLine("ServiceHost constructed");
+            Log.Logger.Information("ServiceHost constructed");
         }
 
         public void Start()
         {
-            Console.WriteLine("ServiceHost started");
+            Log.Logger.Information("ServiceHost started");
 
             _baseAddress = ConfigurationManager.AppSettings["shifts.cars.api.url"];    
             _server = WebApp.Start<Startup>(url: _baseAddress);
 
-            Console.WriteLine($"Server running at {_baseAddress}");
+            Log.Logger.Information($"Server running at {_baseAddress}");
         }
 
         public void Shutdown()
         {
-            Console.WriteLine("ServiceHost shutting down");
+            Log.Logger.Information("ServiceHost shutting down");
 
         }
 
         public void Stop()
         {
-            Console.WriteLine("Server shutting down");
+            Log.Logger.Information("Server shutting down");
 
             _server.Dispose();
 
-            Console.WriteLine("ServiceHost stopped");
+            Log.Logger.Information("ServiceHost stopped");
         }
     }
 }

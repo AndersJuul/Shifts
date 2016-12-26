@@ -19,7 +19,6 @@ namespace Shifts.Drivers.Service.Web
                     service.WhenShutdown(sh => sh.Shutdown());
                     service.WhenStopped(sh => sh.Stop());
                 });
-
             });
         }
     }

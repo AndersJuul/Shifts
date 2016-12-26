@@ -18,7 +18,7 @@ namespace Shifts.Drivers.Migrations
             // Create Logger
             EsLogger.SetupGlobalLogger();
 
-            Log.Logger.Error("Running Migrations");
+            Log.Logger.Information("Running Migrations");
 
             var connectionString =
                 args.FirstOrDefault()

@@ -1,3 +1,4 @@
 Microsoft.Owin.Host.HttpListener
 OctoPack
 TopShelf
+Serilog.Sinks.ElasticSearch

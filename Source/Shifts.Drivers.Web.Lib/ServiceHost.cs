@@ -12,14 +12,9 @@ namespace Shifts.Drivers.Web.Lib
 
         private string _baseAddress ;
 
-        public ServiceHost()
-        {
-            Log.Logger.Information("ServiceHost constructed");
-        }
-
         public void Start()
         {
-            Log.Logger.Information("ServiceHost started");
+            Log.Logger.Information("ServiceHost starting");
 
             _baseAddress = ConfigurationManager.AppSettings["shifts.drivers.api.url"];    
             _server = WebApp.Start<Startup>(url: _baseAddress);

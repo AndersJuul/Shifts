@@ -9,12 +9,12 @@ namespace Shifts.Cars.Service.Web
     {
         static void Main(string[] args)
         {
-            EsLogger.SetupGlobalLogger();
-
-            Log.Logger.Information("Ready to start hostfactory");
-
             HostFactory.Run(factory =>
             {
+                EsLogger.SetupGlobalLogger();
+
+                Log.Logger.Information("Ready to start hostfactory");
+
                 Log.Logger.Information("hostfactory 1");
                 factory.Service<ServiceHost>(service =>
                 {

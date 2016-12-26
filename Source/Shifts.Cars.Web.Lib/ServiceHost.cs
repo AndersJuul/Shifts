@@ -11,6 +11,11 @@ namespace Shifts.Cars.Web.Lib
 
         private string _baseAddress ;
 
+        public ServiceHost()
+        {
+            
+        }
+
         public void Start()
         {
             Log.Logger.Information("ServiceHost starting");

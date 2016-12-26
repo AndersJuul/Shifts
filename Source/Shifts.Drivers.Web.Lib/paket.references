@@ -1,2 +1,3 @@
 Microsoft.AspNet.WebApi.OwinSelfHost
 SeriLog
+Serilog.Extras.Topshelf

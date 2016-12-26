@@ -12,8 +12,12 @@ namespace Shifts.Drivers.Service.Web
         {
             EsLogger.SetupGlobalLogger();
 
+            Log.Logger.Information("Ready to start hostfactory");
+
             HostFactory.Run(factory =>
             {
+                Log.Logger.Information("hostfactory 1");
+
                 factory.OnException(exception => {Log.Logger.Error(exception,"Topshelf xception"); });
                 factory.Service<ServiceHost>(service =>
                 {

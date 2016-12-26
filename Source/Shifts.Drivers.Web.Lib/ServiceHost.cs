@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Configuration;
 using Microsoft.Owin.Hosting;
+using Microsoft.Owin.Logging;
+using Serilog;
 
 namespace Shifts.Drivers.Web.Lib
 {
@@ -17,27 +19,27 @@ namespace Shifts.Drivers.Web.Lib
 
         public void Start()
         {
-            Console.WriteLine("ServiceHost started");
+            Log.Logger.Information("ServiceHost started");
 
             _baseAddress = ConfigurationManager.AppSettings["shifts.drivers.api.url"];    
             _server = WebApp.Start<Startup>(url: _baseAddress);
 
-            Console.WriteLine($"Server running at {_baseAddress}");
+            Log.Logger.Information($"Server running at {_baseAddress}");
         }
 
         public void Shutdown()
         {
-            Console.WriteLine("ServiceHost shutting down");
+            Log.Logger.Information("ServiceHost shutting down");
 
         }
 
         public void Stop()
         {
-            Console.WriteLine("Server shutting down");
+            Log.Logger.Information("Server shutting down");
 
             _server.Dispose();
 
-            Console.WriteLine("ServiceHost stopped");
+            Log.Logger.Information("ServiceHost stopped");
         }
     }
 }

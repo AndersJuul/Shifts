@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Web.Http;
+using Shifts.Drivers.Contracts;
 
 namespace Shifts.Drivers.Web.Lib.Controllers
 {
@@ -9,7 +10,7 @@ namespace Shifts.Drivers.Web.Lib.Controllers
         [Route("")]
         public IHttpActionResult Get()
         {
-            return Ok(DateTimeOffset.Now);
+            return Ok(new Driver());
         }
     }
 }

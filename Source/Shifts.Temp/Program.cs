@@ -1,4 +1,5 @@
-﻿using Topshelf;
+﻿using System.Configuration;
+using Topshelf;
 
 namespace Shifts.Temp
 {
@@ -15,10 +16,9 @@ namespace Shifts.Temp
                     config.WhenStopped(o => { o.Stop();  });
                 });
 
-                x.RunAsLocalSystem();
-                x.SetServiceName("ServiceName");
-                x.SetDescription("ServiceDesc");
-                x.SetDisplayName("ServiceDispName");
+                x.SetServiceName(ConfigurationManager.AppSettings["serviceName"]);
+                x.SetDescription(ConfigurationManager.AppSettings["serviceDescription"]);
+                x.SetDisplayName(ConfigurationManager.AppSettings["serviceDisplayName"]);
 
             });
         }

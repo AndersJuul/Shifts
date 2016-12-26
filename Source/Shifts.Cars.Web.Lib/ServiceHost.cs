@@ -15,8 +15,8 @@ namespace Shifts.Cars.Web.Lib
         {
             //Log.Logger.Information("ServiceHost starting");
 
-            _baseAddress = ConfigurationManager.AppSettings["shifts.cars.api.url"];    
-            _server = WebApp.Start<Startup>(url: _baseAddress);
+            //_baseAddress = ConfigurationManager.AppSettings["shifts.cars.api.url"];    
+            //_server = WebApp.Start<Startup>(url: _baseAddress);
 
             //Log.Logger.Information($"Server running at {_baseAddress}");
         }
@@ -30,7 +30,7 @@ namespace Shifts.Cars.Web.Lib
         {
             //Log.Logger.Information("Server shutting down");
 
-            _server.Dispose();
+            //_server.Dispose();
 
             //Log.Logger.Information("ServiceHost stopped");
         }

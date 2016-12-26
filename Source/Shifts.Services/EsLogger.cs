@@ -11,7 +11,7 @@ namespace Shifts.Services
     {
         public static void SetupGlobalLogger()
         {
-            var assemblyName = Assembly.GetExecutingAssembly().GetName();
+            var assemblyName = Assembly.GetEntryAssembly().GetName();
             var loggerConfig = new LoggerConfiguration()
                 .MinimumLevel.Verbose()
                 .Enrich.With<EnvironmentUserNameEnricher>()

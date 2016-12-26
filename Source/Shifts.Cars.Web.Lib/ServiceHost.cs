@@ -24,7 +24,6 @@ namespace Shifts.Cars.Web.Lib
         public void Shutdown()
         {
             Log.Logger.Information("ServiceHost shutting down");
-
         }
 
         public void Stop()

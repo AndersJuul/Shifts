@@ -25,7 +25,6 @@ namespace Shifts.Drivers.Web.Lib
         public void Shutdown()
         {
             Log.Logger.Information("ServiceHost shutting down");
-
         }
 
         public void Stop()

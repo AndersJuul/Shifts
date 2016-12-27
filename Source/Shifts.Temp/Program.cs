@@ -16,7 +16,7 @@ namespace Shifts.Temp
                     config.WhenStopped(o => { o.Stop();  });
                 });
 
-                x.SetServiceName("QA-ShiftTesting");
+                x.SetServiceName("Shifts.Temp");
                 x.SetDescription(ConfigurationManager.AppSettings["serviceDescription"]);
                 x.SetDisplayName(ConfigurationManager.AppSettings["serviceDisplayName"]);
 

@@ -50,10 +50,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="paket.references" />
-    <None Include="Postdeploy.ps1">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Predeploy.ps1">
+    <None Include="Deploy.ps1">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

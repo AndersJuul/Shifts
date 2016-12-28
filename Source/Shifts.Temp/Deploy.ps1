@@ -27,6 +27,6 @@ $exe = $InstPath
 
 write-host "Installing service: " + $ServiceName
 write-host "Executable: " + $exe
-& $exe install --autostart
+$exe install --autostart
 Start-Service $ServiceName
 write-host "Service installed: " + $ServiceName

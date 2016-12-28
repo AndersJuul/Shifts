@@ -23,11 +23,10 @@ else
 
 
 
-$exe = $OctopusParameters['Octopus.Action.Package.CustomInstallationDirectory'] + '\' + $OctopusParameters['ExeName']
-$serviceName = $OctopusParameters['Topshelf.ServiceName']
+$exe = $InstPath
 
-write-host "Installing service: " + $serviceName
+write-host "Installing service: " + $ServiceName
 write-host "Executable: " + $exe
 & $exe install --autostart
-Start-Service $serviceName
-write-host "Service installed: " + $serviceName
+Start-Service $ServiceName
+write-host "Service installed: " + $ServiceName

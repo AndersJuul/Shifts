@@ -12,7 +12,7 @@ Write-Host "Removing service: " + $ServiceName
 if ($ExePath)
 {
     Write-Host "Service executable: " + $ExePath
-    & $ExePath uninstall
+    $ExePath uninstall
     Write-Host "Service removed."
 }
 else

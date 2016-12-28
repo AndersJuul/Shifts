@@ -1,6 +1,6 @@
 ﻿Param (
     [Parameter(Mandatory=$True)]
-    [string]InstDir,
+    [string]$InstDir,
     [Parameter(Mandatory=$True)]
     [string]$InstPath
 )

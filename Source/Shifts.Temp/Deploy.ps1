@@ -1,4 +1,11 @@
-﻿function Get-ServiceExePath ($name)
+﻿Param (
+    [Parameter(Mandatory=$True)]
+    [string]InstDir,
+    [Parameter(Mandatory=$True)]
+    [string]$InstPath
+)
+
+function Get-ServiceExePath ($name)
 {
     $service = Get-WmiObject win32_service | ?{$_.Name -eq $name} 
     $path = $service | select @{Name="Path"; Expression={$_.PathName.split('"')[1]}} 
@@ -23,10 +30,10 @@ else
 
 
 
-$exe = $InstPath
+$InstPath
 
 write-host "Installing service: " + $ServiceName
-write-host "Executable: " + $exe
-$exe install --autostart
+write-host "Executable: " + $InstPath
+$InstPath install --autostart
 Start-Service $ServiceName
 write-host "Service installed: " + $ServiceName

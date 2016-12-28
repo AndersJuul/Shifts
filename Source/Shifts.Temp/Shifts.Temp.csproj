@@ -50,6 +50,8 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="paket.references" />
+    <None Include="Postdeploy.ps1" />
+    <None Include="Predeploy.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\.paket\paket.targets" />

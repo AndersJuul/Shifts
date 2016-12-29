@@ -17,3 +17,7 @@ else
     Write-Host "Service not found: " $ServiceName
 }
 
+write-host "Installing service: " $ServiceName
+& .\#{Octopus.Action[Shifts.Temp].WindowsService.ExecutablePath} install --dealyed -servicename $ServiceName -username Anders2014\apprunner -password apprunner
+Start-Service $ServiceName
+write-host "Service installed: " + $ServiceName

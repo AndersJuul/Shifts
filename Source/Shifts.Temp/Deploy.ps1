@@ -1,14 +1,6 @@
-﻿Param (
-    [Parameter(Mandatory=$True)]
-    [string]$Environment,
-    [Parameter(Mandatory=$True)]
-    [string]$InstPath
-)
+﻿Write-Host "Parameter: " + #{Octopus.Environment.Name}
 
-Write-Host "Parameter: " + $Environment
-Write-Host "Parameter: " + $InstPath
-
-$ServiceName = $Environment + "-Shifts.Temp"
+$ServiceName = #{Octopus.Environment.Name} + "-Shifts.Temp"
 
 Write-Host "Removing service: " $ServiceName
 

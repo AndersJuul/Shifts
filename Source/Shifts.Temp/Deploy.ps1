@@ -8,7 +8,7 @@
 Write-Host "Parameter: " + $Environment
 Write-Host "Parameter: " + $InstPath
 
-$ServiceName = $Environment"Shifts.Temp"
+$ServiceName = $Environment + "Shifts.Temp"
 
 Write-Host "Removing service: " $ServiceName
 

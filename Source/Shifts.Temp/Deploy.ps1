@@ -1,6 +1,6 @@
 ﻿Write-Host "Parameter: " + #{Octopus.Environment.Name}
 
-$ServiceName = #{Octopus.Environment.Name} + "-Shifts.Temp"
+$ServiceName = "#{Octopus.Environment.Name}" + "-Shifts.Temp"
 
 Write-Host "Removing service: " $ServiceName
 

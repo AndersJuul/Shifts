@@ -1,5 +1,7 @@
 ﻿Param (
     [Parameter(Mandatory=$True)]
+    [string]$Environment,
+    [Parameter(Mandatory=$True)]
     [string]$InstDir,
     [Parameter(Mandatory=$True)]
     [string]$InstPath
@@ -11,6 +13,10 @@ function Get-ServiceExePath ($name)
     $path = $service | select @{Name="Path"; Expression={$_.PathName.split('"')[1]}} 
     $path.Path
 }
+
+Write-Host "Parameter: " + $Environment
+Write-Host "Parameter: " + $InstDir
+Write-Host "Parameter: " + $InstPath
 
 $ServiceName = $OctopusParameters['MyServiceName']
 $ExePath = Get-ServiceExePath $ServiceName

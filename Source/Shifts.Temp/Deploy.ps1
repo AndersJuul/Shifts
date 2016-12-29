@@ -8,7 +8,7 @@
 Write-Host "Parameter: " + $Environment
 Write-Host "Parameter: " + $InstPath
 
-$ServiceName = $Environment + "Shifts.Temp"
+$ServiceName = $Environment + "-Shifts.Temp"
 
 Write-Host "Removing service: " $ServiceName
 
@@ -22,3 +22,8 @@ else
 {
     Write-Host "Service not found: " $ServiceName
 }
+
+write-host "Installing service: " $ServiceName
+Shifts.Temp.exe install --autostart -servicename $ServiceName
+Start-Service $ServiceName
+write-host "Service installed: " + $ServiceName

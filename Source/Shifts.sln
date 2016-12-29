@@ -32,8 +32,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.Drivers.Web.Lib", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.Services", "Shifts.Services\Shifts.Services.csproj", "{34EA1536-01E7-499D-889F-7252DBD7C543}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.Temp", "Shifts.Temp\Shifts.Temp.csproj", "{BDFB0BBE-3770-4D7D-9573-5D030C0053AE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,10 +78,6 @@ Global
 		{34EA1536-01E7-499D-889F-7252DBD7C543}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34EA1536-01E7-499D-889F-7252DBD7C543}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34EA1536-01E7-499D-889F-7252DBD7C543}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BDFB0BBE-3770-4D7D-9573-5D030C0053AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BDFB0BBE-3770-4D7D-9573-5D030C0053AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BDFB0BBE-3770-4D7D-9573-5D030C0053AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BDFB0BBE-3770-4D7D-9573-5D030C0053AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

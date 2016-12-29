@@ -1,14 +1,14 @@
-﻿using Serilog;
+﻿using System.Configuration;
+using Serilog;
 using Shifts.Drivers.Web.Lib;
 using Shifts.Services;
 using Topshelf;
-using Topshelf.Logging;
 
 namespace Shifts.Drivers.Service.Web
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             EsLogger.SetupGlobalLogger();
 
@@ -26,6 +26,7 @@ namespace Shifts.Drivers.Service.Web
                     service.WhenShutdown(sh => sh.Shutdown());
                     service.WhenStopped(sh => sh.Stop());
                 });
+                factory.SetDescription(ConfigurationManager.AppSettings["version"]);
             });
         }
     }

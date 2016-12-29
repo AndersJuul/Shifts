@@ -1,5 +1,7 @@
 ﻿Write-Host "Parameter: #{Octopus.Environment.Name}"
-Write-Host "ExePath : #{Octopus.Action[Shifts.Temp].WindowsService.ExecutablePath}"
+$ExePath = "#{Octopus.Action[Shifts.Temp].WindowsService.ExecutablePath}"
+Write-Host "ExePath : " $ExePath
+
 
 $ServiceName = "#{Octopus.Environment.Name}-Shifts.Temp"
 Write-Host "Service Name: $ServiceName"
@@ -16,6 +18,6 @@ else
 }
 
 write-host "Installing service: " $ServiceName
-& .\#{Octopus.Action[Shifts.Temp].WindowsService.ExecutablePath} install --autostart -servicename $ServiceName
+& .\#{Octopus.Action[Shifts.Temp].WindowsService.ExecutablePath} install --autostart -servicename $ServiceName -username Anders2014\apprunner -password apprunner
 Start-Service $ServiceName
 write-host "Service installed: " + $ServiceName

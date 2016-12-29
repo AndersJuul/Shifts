@@ -9,13 +9,13 @@ Write-Host "Parameter: " + $Environment
 Write-Host "Parameter: " + $InstPath
 
 $ServiceName = $Environment"Shifts.Temp"
-$ExePath = "Shifts.Temp.exe"
 
 Write-Host "Removing service: " $ServiceName
+
 if ($ExePath)
 {
-    Write-Host "Service executable: " $ExePath
-    $ExePath uninstall
+    Write-Host "Service executable: Shifts.Temp.exe"
+    Shifts.Temp.exe uninstall
     Write-Host "Service removed."
 }
 else

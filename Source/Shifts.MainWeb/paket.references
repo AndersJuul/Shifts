@@ -25,6 +25,7 @@ Microsoft.Owin.Security.Twitter
 Microsoft.Web.Infrastructure
 Modernizr
 Newtonsoft.Json
+OctoPack
 Owin
 Respond
 WebGrease

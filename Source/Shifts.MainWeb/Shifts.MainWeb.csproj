@@ -196,7 +196,6 @@
       <Paket>True</Paket>
     </Content>
     <Content Include="paket.references" />
-    <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map">
       <Paket>True</Paket>
     </Content>
@@ -229,14 +228,14 @@
   <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
     <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
   </Target>
-<Target Name="CopyRoslynFiles" AfterTargets="AfterBuild" >
-  <ItemGroup>
-    <RoslynFiles Include="$(SolutionDir)\packages\Microsoft.Net.Compilers\tools\*" />
-  </ItemGroup>
-  <MakeDir Directories="$(WebProjectOutputDir)\bin\roslyn" />
-  <Copy SourceFiles="@(RoslynFiles)" DestinationFolder="$(WebProjectOutputDir)\bin\roslyn" SkipUnchangedFiles="true" Retries="$(CopyRetryCount)" RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)" />
-</Target>
-<ProjectExtensions>
+  <Target Name="CopyRoslynFiles" AfterTargets="AfterBuild">
+    <ItemGroup>
+      <RoslynFiles Include="$(SolutionDir)\packages\Microsoft.Net.Compilers\tools\*" />
+    </ItemGroup>
+    <MakeDir Directories="$(WebProjectOutputDir)\bin\roslyn" />
+    <Copy SourceFiles="@(RoslynFiles)" DestinationFolder="$(WebProjectOutputDir)\bin\roslyn" SkipUnchangedFiles="true" Retries="$(CopyRetryCount)" RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)" />
+  </Target>
+  <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>

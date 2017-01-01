@@ -66,6 +66,8 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.module.js" />
+    <Content Include="app\main.js" />
     <Content Include="Scripts\angular-mocks.js">
       <Paket>True</Paket>
     </Content>

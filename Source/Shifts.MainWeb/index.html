@@ -1,10 +1,18 @@
 ﻿<!DOCTYPE html>
-<html>
+
+<html ng-app="app">
 <head>
-    <title>Hell</title>
-	<meta charset="utf-8" />
+    <title></title>
 </head>
-<body>
+<body ng-controller="Main as vm">
+
+    <input type="text" ng-model="vm.food" placeholder="Enter food" />
+
+    <p>Sriracha sauce is great with {{vm.food}}!</p>
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/main.js"></script>
 
 </body>
 </html>

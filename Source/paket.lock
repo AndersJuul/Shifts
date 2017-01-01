@@ -50,7 +50,7 @@ NUGET
     Microsoft.AspNet.WebPages (3.2.3) - framework: >= net461
       Microsoft.AspNet.Razor (>= 3.2.3 < 3.3)
       Microsoft.Web.Infrastructure (>= 1.0)
-    Microsoft.CodeDom.Providers.DotNetCompilerPlatform (1.0.1) - framework: >= net461
+    Microsoft.CodeDom.Providers.DotNetCompilerPlatform (1.0) - framework: >= net461
       Microsoft.Net.Compilers (>= 1.0)
     Microsoft.jQuery.Unobtrusive.Validation (3.2.3) - framework: >= net461
       jQuery (>= 1.8)

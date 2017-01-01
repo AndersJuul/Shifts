@@ -32,7 +32,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.Drivers.Web.Lib", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.Services", "Shifts.Services\Shifts.Services.csproj", "{34EA1536-01E7-499D-889F-7252DBD7C543}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.MainWeb", "Shifts.MainWeb\Shifts.MainWeb.csproj", "{47801BBB-F2DB-42FD-B7A1-51582F0F70DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.MainWeb", "Shifts.MainWeb\Shifts.MainWeb.csproj", "{3B80AA62-87B5-4BF7-83A5-6A1E69052269}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,10 +80,10 @@ Global
 		{34EA1536-01E7-499D-889F-7252DBD7C543}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34EA1536-01E7-499D-889F-7252DBD7C543}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34EA1536-01E7-499D-889F-7252DBD7C543}.Release|Any CPU.Build.0 = Release|Any CPU
-		{47801BBB-F2DB-42FD-B7A1-51582F0F70DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{47801BBB-F2DB-42FD-B7A1-51582F0F70DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{47801BBB-F2DB-42FD-B7A1-51582F0F70DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{47801BBB-F2DB-42FD-B7A1-51582F0F70DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B80AA62-87B5-4BF7-83A5-6A1E69052269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B80AA62-87B5-4BF7-83A5-6A1E69052269}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B80AA62-87B5-4BF7-83A5-6A1E69052269}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B80AA62-87B5-4BF7-83A5-6A1E69052269}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,6 @@
 NUGET
   remote: https://www.nuget.org/api/v2
+    AngularJS.Core (1.5.9) - framework: >= net461
     Antlr (3.4.1.9004) - framework: >= net461
     bootstrap (3.0) - framework: >= net461
       jQuery (>= 1.9)
@@ -121,7 +122,7 @@ NUGET
       Serilog (>= 2.0) - framework: >= net45, >= netstandard11
     Serilog.Sinks.RollingFile (3.2) - framework: >= net461
       Serilog.Sinks.File (>= 3.1) - framework: >= net45, >= netstandard13
-    Topshelf (4.0.3)
+    Topshelf (4.0.3) - framework: >= net461
     Topshelf.Serilog (4.0.3) - framework: >= net461
       Serilog (>= 1.5.14)
       Topshelf (>= 4.0.3)

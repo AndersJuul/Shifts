@@ -1,9 +1,8 @@
 ﻿(function () {
     'use strict';
 
-    function mainController() {
-        var vm = this;
-        vm.food = 'pizza';
+    function mainController($scope) {
+        $scope.food = 'pizza';
     }
 
     angular

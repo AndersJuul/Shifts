@@ -1,9 +1,8 @@
 ﻿(function () {
     'use strict';
 
-    function aboutController() {
-        var vm = this;
-        vm.food = 'pizza';
+    function aboutController($scope) {
+        $scope.food = 'avout-is';
     }
 
     angular

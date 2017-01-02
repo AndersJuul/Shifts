@@ -51,3 +51,4 @@ nuget Serilog.Enrichers.Environment framework: >= net461
 nuget Topshelf.Serilog framework: >= net461
 nuget Serilog.Extras.Topshelf framework: >= net461
 nuget AngularJS.Core framework: >= net461
+nuget angular-route framework: >= net461

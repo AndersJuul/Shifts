@@ -71,6 +71,7 @@
     <Content Include="app\css\bootstrap.min.css" />
     <Content Include="app\css\theme.css" />
     <Content Include="app\mainController.js" />
+    <Content Include="main.html" />
     <Content Include="Scripts\angular-mocks.js">
       <Paket>True</Paket>
     </Content>

@@ -67,6 +67,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.module.js" />
+    <Content Include="app\css\app.css" />
+    <Content Include="app\css\bootstrap.min.css" />
+    <Content Include="app\css\theme.css" />
     <Content Include="app\main.js" />
     <Content Include="Scripts\angular-mocks.js">
       <Paket>True</Paket>

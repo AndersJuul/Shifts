@@ -1,13 +1,13 @@
 ﻿(function () {
     'use strict';
 
-    function main() {
+    function mainController() {
         var vm = this;
         vm.food = 'pizza';
     }
 
     angular
         .module('app')
-        .controller('Main', main);
+        .controller('MainController', mainController);
 
 })();

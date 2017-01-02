@@ -66,6 +66,8 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\contactController.js" />
+    <Content Include="contact.html" />
     <Content Include="app\app.module.js" />
     <Content Include="app\css\app.css" />
     <Content Include="app\css\bootstrap.min.css" />

@@ -13,6 +13,10 @@
                 templateUrl: "about.html",
                 controller: "AboutController"
             })
+            .when("/contact", {
+                templateUrl: "contact.html",
+                controller: "ContactController"
+            })
             .otherwise(
             { redirectTo: "/main" }
             );

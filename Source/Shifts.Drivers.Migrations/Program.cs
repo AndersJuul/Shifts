@@ -23,7 +23,6 @@ namespace Shifts.Drivers.Migrations
             var connectionString =
                 args.FirstOrDefault()
                 ?? ConfigurationManager.ConnectionStrings["shiftDriversDb"].ConnectionString;
-            //"Server=(local)\\SqlExpress; Database="+ConfigurationManager.AppSettings["db-name"]+"; Trusted_connection=true";
 
             EnsureDatabase.For.SqlDatabase(connectionString);
 

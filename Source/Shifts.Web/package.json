@@ -1,0 +1,26 @@
+{
+  "name": "octofxjs",
+  "version": "0.0.1",
+  "description": "A sample project to demonstrate packaging and pushing Node.js projects",
+  "author": "Octopus Deploy <support@octopus.com> (http://octopus.com/)",
+  "license": "MIT",
+  "scripts": {
+    "build": "node ./node_modules/gulp/bin/gulp.js build",
+	 "publish": "node ./node_modules/gulp/bin/gulp.js publish"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "extend": "^3.0.0"
+  },
+  "devDependencies": {
+    "@octopusdeploy/gulp-octo": "0.0.8",
+    "gulp": "^3.9.0",
+    "gulp-bump": "^2.5.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-less": "^3.0.5",
+    "gulp-rename": "^1.2.2"
+  }
+}

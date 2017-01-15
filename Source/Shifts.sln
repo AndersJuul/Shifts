@@ -34,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.Services", "Shifts.S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.MainWeb", "Shifts.MainWeb\Shifts.MainWeb.csproj", "{3B80AA62-87B5-4BF7-83A5-6A1E69052269}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTest", "WebTest\WebTest.csproj", "{BC056F70-CEBD-4FFF-847A-63C6CFCC4140}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,6 +86,10 @@ Global
 		{3B80AA62-87B5-4BF7-83A5-6A1E69052269}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B80AA62-87B5-4BF7-83A5-6A1E69052269}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B80AA62-87B5-4BF7-83A5-6A1E69052269}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC056F70-CEBD-4FFF-847A-63C6CFCC4140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC056F70-CEBD-4FFF-847A-63C6CFCC4140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC056F70-CEBD-4FFF-847A-63C6CFCC4140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC056F70-CEBD-4FFF-847A-63C6CFCC4140}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

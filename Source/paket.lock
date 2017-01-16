@@ -137,7 +137,7 @@ NUGET
     Topshelf.Serilog (4.0.3) - framework: >= net461
       Serilog (>= 1.5.14)
       Topshelf (>= 4.0.3)
-    WebGrease (1.5.2) - framework: >= net461
+    WebGrease (1.6) - framework: >= net461
       Antlr (>= 3.4.1.9004)
       Newtonsoft.Json (>= 5.0.4)
   remote: https://www.myget.org/f/aspnetvnext/api/v2

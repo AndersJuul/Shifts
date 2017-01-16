@@ -134,6 +134,12 @@
       <Paket>True</Paket>
     </Content>
     <Content Include="Global.asax" />
+    <Content Include="Scripts\respond.matchmedia.addListener.js">
+      <Paket>True</Paket>
+    </Content>
+    <Content Include="Scripts\respond.matchmedia.addListener.min.js">
+      <Paket>True</Paket>
+    </Content>
     <Content Include="Scripts\jquery-1.10.2-vsdoc.js">
       <Paket>True</Paket>
     </Content>

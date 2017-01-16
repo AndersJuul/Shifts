@@ -5,7 +5,7 @@ nuget AngularJS.Core framework: >= net461
 nuget Antlr 3.4.1.9004 framework: >= net461
 nuget Dapper 1.50.2 framework: >= net461
 nuget DbUp
-nuget EntityFramework 6.1.3 framework: >= net461
+nuget EntityFramework framework: >= net461
 nuget Microsoft.AspNet.Identity.Core 2.2.1 framework: >= net461
 nuget Microsoft.AspNet.Identity.EntityFramework 2.2.1 framework: >= net461
 nuget Microsoft.AspNet.Identity.Owin 2.2.1 framework: >= net461

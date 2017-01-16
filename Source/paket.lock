@@ -1,7 +1,7 @@
 NUGET
   remote: https://www.nuget.org/api/v2
     AngularJS.Core (1.5.9) - framework: >= net461
-    Antlr (3.5.0.2) - framework: >= net461
+    Antlr (3.4.1.9004) - framework: >= net461
     bootstrap (3.0) - framework: >= net461
       jQuery (>= 1.9)
     Dapper (1.50.2) - framework: >= net461
@@ -11,8 +11,8 @@ NUGET
     jQuery (1.10.2) - framework: >= net461
     jQuery.Validation (1.11.1) - framework: >= net461
       jQuery (>= 1.4.4)
-    microsoft-web-helpers (2.1.20710.2) - framework: >= net461
-      Microsoft.AspNet.WebPages (>= 2.0 < 2.1)
+    microsoft-web-helpers (2.0.20710.1) - framework: >= net461
+      Microsoft.AspNet.WebPages.Administration (>= 2.0 < 2.1)
       Microsoft.AspNet.WebPages.WebData (>= 2.0 < 2.1)
     Microsoft.AspNet.Identity.Core (2.2.1) - framework: >= net461
     Microsoft.AspNet.Identity.EntityFramework (2.2.1) - framework: >= net461
@@ -23,9 +23,9 @@ NUGET
       Microsoft.Owin.Security (>= 2.1)
       Microsoft.Owin.Security.Cookies (>= 2.1)
       Microsoft.Owin.Security.OAuth (>= 2.1)
-    Microsoft.AspNet.Mvc (4.0.40804) - framework: >= net461
-      Microsoft.AspNet.Razor (>= 2.0.20710)
-      Microsoft.AspNet.WebPages (>= 2.0.20710)
+    Microsoft.AspNet.Mvc (5.2.3) - framework: >= net461
+      Microsoft.AspNet.Razor (>= 3.2.3 < 3.3)
+      Microsoft.AspNet.WebPages (>= 3.2.3 < 3.3)
     Microsoft.AspNet.Razor (3.2.3) - framework: >= net461
     Microsoft.AspNet.Web.Optimization (1.1.3) - framework: >= net461
       Microsoft.Web.Infrastructure (>= 1.0)
@@ -36,10 +36,10 @@ NUGET
       Newtonsoft.Json (>= 6.0.4) - framework: >= net45, portable-wp80+win+wp81+wpa81
     Microsoft.AspNet.WebApi.Core (5.2.3) - framework: >= net461
       Microsoft.AspNet.WebApi.Client (>= 5.2.3)
-    Microsoft.AspNet.WebApi.HelpPage (4.0.30506) - framework: >= net461
-      Microsoft.AspNet.Mvc (>= 4.0.20710)
-      Microsoft.AspNet.Razor (>= 2.0.20710)
-      Microsoft.AspNet.WebApi.WebHost (>= 4.0.20710)
+    Microsoft.AspNet.WebApi.HelpPage (5.2.3) - framework: >= net461
+      Microsoft.AspNet.Mvc (>= 5.2.3 < 5.3)
+      Microsoft.AspNet.Razor (>= 3.2.3 < 3.3)
+      Microsoft.AspNet.WebApi.WebHost (>= 5.2.3 < 5.3)
     Microsoft.AspNet.WebApi.Owin (5.2.3) - framework: >= net461
       Microsoft.AspNet.WebApi.Core (>= 5.2.3 < 5.3)
       Microsoft.Owin (>= 2.0.2)
@@ -50,9 +50,12 @@ NUGET
       Microsoft.Owin.Hosting (>= 2.0.2)
     Microsoft.AspNet.WebApi.WebHost (5.2.3) - framework: >= net461
       Microsoft.AspNet.WebApi.Core (>= 5.2.3 < 5.3)
-    Microsoft.AspNet.WebPages (2.0.30506) - framework: >= net461
-      Microsoft.AspNet.Razor (>= 2.0.20710)
+    Microsoft.AspNet.WebPages (3.2.3) - framework: >= net461
+      Microsoft.AspNet.Razor (>= 3.2.3 < 3.3)
       Microsoft.Web.Infrastructure (>= 1.0)
+    Microsoft.AspNet.WebPages.Administration (2.0.30506) - framework: >= net461
+      Microsoft.AspNet.WebPages (>= 2.0.20710)
+      NuGet.Core (>= 1.6.2)
     Microsoft.AspNet.WebPages.Data (3.2.3) - framework: >= net461
     Microsoft.AspNet.WebPages.WebData (2.0.30506) - framework: >= net461
       Microsoft.AspNet.WebPages.Data (>= 2.0.20710)
@@ -104,12 +107,16 @@ NUGET
       Newtonsoft.Json (>= 6.0.4)
       Owin (>= 1.0)
     Microsoft.Web.Infrastructure (1.0) - framework: >= net461
-    Modernizr (2.8.3) - framework: >= net461
+    Microsoft.Web.Xdt (2.1.1) - framework: >= net461
+    Modernizr (2.6.2) - framework: >= net461
+    Newtonsoft.Json (6.0.4) - framework: >= net461
     NuGet.CommandLine (3.5)
+    NuGet.Core (2.14) - framework: >= net461
+      Microsoft.Web.Xdt (>= 2.1)
     NUnit (2.6.4)
     OctoPack (3.4.7)
     Owin (1.0) - framework: >= net461
-    Respond (1.4.2) - framework: >= net461
+    Respond (1.2) - framework: >= net461
     Serilog (2.3) - framework: >= net461
     Serilog.Enrichers.Environment (2.1.1) - framework: >= net461
       Serilog (>= 2.0) - framework: >= net45, >= netstandard13
@@ -131,8 +138,6 @@ NUGET
     Topshelf.Serilog (4.0.3) - framework: >= net461
       Serilog (>= 1.5.14)
       Topshelf (>= 4.0.3)
-    WebGrease (1.6) - framework: >= net461
+    WebGrease (1.5.2) - framework: >= net461
       Antlr (>= 3.4.1.9004)
       Newtonsoft.Json (>= 5.0.4)
-  remote: https://www.myget.org/f/aspnetvnext/api/v2
-    Newtonsoft.Json (9.0.1) - framework: >= net461

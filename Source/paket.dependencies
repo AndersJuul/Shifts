@@ -1,54 +1,54 @@
 source https://www.myget.org/f/aspnetvnext/api/v2
 source https://www.nuget.org/api/v2/
 
-nuget Antlr framework: >= net461
+nuget AngularJS.Core framework: >= net461
+nuget Antlr 3.4.1.9004 framework: >= net461
 nuget Dapper 1.50.2 framework: >= net461
-nuget EntityFramework framework: >= net461
-nuget Microsoft.AspNet.Identity.Core framework: >= net461
-nuget Microsoft.AspNet.Identity.EntityFramework framework: >= net461
+nuget DbUp
+nuget EntityFramework 6.1.3 framework: >= net461
+nuget Microsoft.AspNet.Identity.Core 2.2.1 framework: >= net461
+nuget Microsoft.AspNet.Identity.EntityFramework 2.2.1 framework: >= net461
 nuget Microsoft.AspNet.Identity.Owin 2.2.1 framework: >= net461
-nuget Microsoft.AspNet.Mvc framework: >= net461
-nuget Microsoft.AspNet.Razor framework: >= net461
-nuget Microsoft.AspNet.Web.Optimization framework: >= net461
-nuget Microsoft.AspNet.WebApi framework: >= net461
-nuget Microsoft.AspNet.WebApi.Client framework: >= net461
-nuget Microsoft.AspNet.WebApi.Core framework: >= net461
-nuget Microsoft.AspNet.WebApi.HelpPage framework: >= net461
-nuget Microsoft.AspNet.WebApi.Owin framework: >= net461
-nuget Microsoft.AspNet.WebApi.OwinSelfHost framework: >=net461
-nuget Microsoft.AspNet.WebApi.WebHost framework: >= net461
-nuget Microsoft.AspNet.WebPages framework: >= net461
+nuget Microsoft.AspNet.Mvc 5.2.3 framework: >= net461
+nuget Microsoft.AspNet.Razor 3.2.3 framework: >= net461
+nuget Microsoft.AspNet.Web.Optimization 1.1.3 framework: >= net461
+nuget Microsoft.AspNet.WebApi 5.2.3 framework: >= net461
+nuget Microsoft.AspNet.WebApi.Client 5.2.3 framework: >= net461
+nuget Microsoft.AspNet.WebApi.Core 5.2.3 framework: >= net461
+nuget Microsoft.AspNet.WebApi.HelpPage 5.2.3 framework: >= net461
+nuget Microsoft.AspNet.WebApi.Owin 5.2.3 framework: >= net461
+nuget Microsoft.AspNet.WebApi.OwinSelfHost 5.2.3 framework: >=net461
+nuget Microsoft.AspNet.WebApi.WebHost 5.2.3 framework: >= net461
+nuget Microsoft.AspNet.WebPages 3.2.3 framework: >= net461
 nuget Microsoft.CodeDom.Providers.DotNetCompilerPlatform 1.0.1 framework: >= net461
 nuget Microsoft.Net.Compilers 1.1.1 framework: >= net461
-nuget Microsoft.Owin framework: >= net461
-nuget Microsoft.Owin.Host.SystemWeb framework: >= net461
+nuget Microsoft.Owin 3.0.1 framework: >= net461
 nuget Microsoft.Owin.Host.HttpListener framework: >= net461
-nuget Microsoft.Owin.Security framework: >= net461
-nuget Microsoft.Owin.Security.Cookies framework: >= net461
-nuget Microsoft.Owin.Security.Facebook framework: >= net461
-nuget Microsoft.Owin.Security.Google framework: >= net461
-nuget Microsoft.Owin.Security.MicrosoftAccount framework: >= net461
-nuget Microsoft.Owin.Security.OAuth framework: >= net461
-nuget Microsoft.Owin.Security.Twitter framework: >= net461
-nuget Microsoft.Web.Infrastructure framework: >= net461
-nuget Microsoft.jQuery.Unobtrusive.Validation framework: >= net461
-nuget Modernizr framework: >= net461
+nuget Microsoft.Owin.Host.SystemWeb 3.0.1 framework: >= net461
+nuget Microsoft.Owin.Security 3.0.1 framework: >= net461
+nuget Microsoft.Owin.Security.Cookies 3.0.1 framework: >= net461
+nuget Microsoft.Owin.Security.Facebook 3.0.1 framework: >= net461
+nuget Microsoft.Owin.Security.Google 3.0.1 framework: >= net461
+nuget Microsoft.Owin.Security.MicrosoftAccount 3.0.1 framework: >= net461
+nuget Microsoft.Owin.Security.OAuth 3.0.1 framework: >= net461
+nuget Microsoft.Owin.Security.Twitter 3.0.1 framework: >= net461
+nuget Microsoft.Web.Infrastructure 1.0.0.0 framework: >= net461
+nuget Microsoft.jQuery.Unobtrusive.Validation 3.2.3 framework: >= net461
+nuget Modernizr 2.6.2 framework: >= net461
 nuget NUnit 2.6.4
-nuget Newtonsoft.Json  framework: >= net461
+nuget Newtonsoft.Json 6.0.4 framework: >= net461
 nuget NuGet.CommandLine
-nuget Owin framework: >= net461
-nuget Respond framework: >= net461
+nuget OctoPack 3.4.7
+nuget Owin 1.0 framework: >= net461
+nuget Respond 1.2.0 framework: >= net461
+nuget Serilog framework: >= net461
+nuget Serilog.Enrichers.Environment framework: >= net461
+nuget Serilog.Extras.Topshelf framework: >= net461
+nuget Serilog.Sinks.ElasticSearch framework: >= net461
 nuget TopShelf framework: >= net461
-nuget WebGrease framework: >= net461
+nuget Topshelf.Serilog framework: >= net461
+nuget WebGrease 1.5.2 framework: >= net461
 nuget bootstrap 3.0.0 framework: >= net461
-nuget DbUp
 nuget jQuery 1.10.2 framework: >= net461
 nuget jQuery.Validation 1.11.1 framework: >= net461
-nuget OctoPack
-nuget Serilog framework: >= net461
-nuget Serilog.Sinks.ElasticSearch framework: >= net461
-nuget Serilog.Enrichers.Environment framework: >= net461
-nuget Topshelf.Serilog framework: >= net461
-nuget Serilog.Extras.Topshelf framework: >= net461
-nuget AngularJS.Core framework: >= net461
 nuget microsoft-web-helpers framework: >= net461

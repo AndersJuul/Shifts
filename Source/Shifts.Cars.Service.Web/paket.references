@@ -3,3 +3,4 @@ OctoPack
 TopShelf
 Serilog.Sinks.ElasticSearch
 Serilog.Extras.Topshelf
+Newtonsoft.Json  

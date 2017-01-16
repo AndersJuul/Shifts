@@ -21,7 +21,9 @@ nuget Microsoft.AspNet.WebApi.OwinSelfHost 5.2.3 framework: >=net461
 nuget Microsoft.AspNet.WebApi.WebHost 5.2.3 framework: >= net461
 nuget Microsoft.AspNet.WebPages 3.2.3 framework: >= net461
 nuget Microsoft.CodeDom.Providers.DotNetCompilerPlatform 1.0.1 framework: >= net461
+//nuget Microsoft.CodeDom.Providers.DotNetCompilerPlatform 1.0.0 framework: >= net461
 nuget Microsoft.Net.Compilers 1.1.1 framework: >= net461
+//nuget Microsoft.Net.Compilers 1.0.0 framework: >= net461
 nuget Microsoft.Owin 3.0.1 framework: >= net461
 nuget Microsoft.Owin.Host.HttpListener framework: >= net461
 nuget Microsoft.Owin.Host.SystemWeb 3.0.1 framework: >= net461
@@ -38,7 +40,7 @@ nuget Modernizr 2.6.2 framework: >= net461
 nuget NUnit 2.6.4
 nuget Newtonsoft.Json 6.0.4 framework: >= net461
 nuget NuGet.CommandLine
-nuget OctoPack 3.4.7
+nuget OctoPack 3.4.7 framework: >= net461
 nuget Owin 1.0 framework: >= net461
 nuget Respond 1.2.0 framework: >= net461
 nuget Serilog framework: >= net461

@@ -30,7 +30,7 @@
         @RenderBody()
         <hr />
         <footer class="@System.Configuration.ConfigurationManager.AppSettings["env"]">
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application - Version @System.Configuration.ConfigurationManager.AppSettings["version"]</p>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application - Version @System.Configuration.ConfigurationManager.AppSettings["version"] - @System.Configuration.ConfigurationManager.AppSettings["env"]</p>
         </footer>
     </div>
 

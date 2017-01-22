@@ -15,3 +15,15 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.DEV {
+    background-color: green;
+}
+
+.QA {
+    background-color: orange;
+}
+
+.PROD {
+    background-color: red;
+}

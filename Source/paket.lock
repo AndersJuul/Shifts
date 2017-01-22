@@ -2,14 +2,14 @@ NUGET
   remote: https://www.nuget.org/api/v2
     AngularJS.Core (1.5.9) - framework: >= net461
     Antlr (3.4.1.9004) - framework: >= net461
-    bootstrap (3.0) - framework: >= net461
-      jQuery (>= 1.9)
+    bootstrap (3.3.7) - framework: >= net461
+      jQuery (>= 1.9.1 < 4.0)
     Dapper (1.50.2) - framework: >= net461
     dbup (3.3.5)
     Elasticsearch.Net (5.0.1) - framework: >= net461
     EntityFramework (6.1.3) - framework: >= net461
-    jQuery (1.10.2) - framework: >= net461
-    jQuery.Validation (1.11.1) - framework: >= net461
+    jQuery (3.1.1) - framework: >= net461
+    jQuery.Validation (1.16) - framework: >= net461
       jQuery (>= 1.4.4)
     microsoft-web-helpers (2.0.20710.1) - framework: >= net461
       Microsoft.AspNet.WebPages.Administration (>= 2.0 < 2.1)
@@ -109,14 +109,13 @@ NUGET
     Microsoft.Web.Infrastructure (1.0) - framework: >= net461
     Microsoft.Web.Xdt (2.1.1) - framework: >= net461
     Modernizr (2.6.2) - framework: >= net461
-    Newtonsoft.Json (6.0.4) - framework: >= net461
     NuGet.CommandLine (3.5)
     NuGet.Core (2.14) - framework: >= net461
       Microsoft.Web.Xdt (>= 2.1)
     NUnit (2.6.4)
     OctoPack (3.4.7) - framework: >= net461
     Owin (1.0) - framework: >= net461
-    Respond (1.2) - framework: >= net461
+    Respond (1.4.2) - framework: >= net461
     Serilog (2.3) - framework: >= net461
     Serilog.Enrichers.Environment (2.1.1) - framework: >= net461
       Serilog (>= 2.0) - framework: >= net45, >= netstandard13
@@ -138,6 +137,8 @@ NUGET
     Topshelf.Serilog (4.0.3) - framework: >= net461
       Serilog (>= 1.5.14)
       Topshelf (>= 4.0.3)
-    WebGrease (1.5.2) - framework: >= net461
+    WebGrease (1.6) - framework: >= net461
       Antlr (>= 3.4.1.9004)
       Newtonsoft.Json (>= 5.0.4)
+  remote: https://www.myget.org/f/aspnetvnext/api/v2
+    Newtonsoft.Json (9.0.1) - framework: >= net461

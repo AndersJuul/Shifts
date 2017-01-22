@@ -117,6 +117,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\bootstrap-theme.css.map">
+      <Paket>True</Paket>
+    </Content>
+    <Content Include="Content\bootstrap-theme.min.css.map">
+      <Paket>True</Paket>
+    </Content>
+    <Content Include="Content\bootstrap.css.map">
+      <Paket>True</Paket>
+    </Content>
+    <Content Include="Content\bootstrap.min.css.map">
+      <Paket>True</Paket>
+    </Content>
     <Content Include="Content\bootstrap-theme.css">
       <Paket>True</Paket>
     </Content>
@@ -130,11 +142,38 @@
       <Paket>True</Paket>
     </Content>
     <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2">
+      <Paket>True</Paket>
+    </Content>
     <Content Include="fonts\glyphicons-halflings-regular.svg">
       <Paket>True</Paket>
     </Content>
     <Content Include="Global.asax" />
-    <Content Include="Scripts\jquery-1.10.2-vsdoc.js">
+    <Content Include="Scripts\jquery-3.1.1-vsdoc.js">
+      <Paket>True</Paket>
+    </Content>
+    <Content Include="Scripts\jquery-3.1.1.js">
+      <Paket>True</Paket>
+    </Content>
+    <Content Include="Scripts\jquery-3.1.1.min.js">
+      <Paket>True</Paket>
+    </Content>
+    <Content Include="Scripts\jquery-3.1.1.min.map">
+      <Paket>True</Paket>
+    </Content>
+    <Content Include="Scripts\jquery-3.1.1.slim.js">
+      <Paket>True</Paket>
+    </Content>
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js">
+      <Paket>True</Paket>
+    </Content>
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map">
+      <Paket>True</Paket>
+    </Content>
+    <Content Include="Scripts\respond.matchmedia.addListener.js">
+      <Paket>True</Paket>
+    </Content>
+    <Content Include="Scripts\respond.matchmedia.addListener.min.js">
       <Paket>True</Paket>
     </Content>
     <Content Include="Scripts\jquery.validate-vsdoc.js">
@@ -168,12 +207,6 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js">
-      <Paket>True</Paket>
-    </Content>
-    <Content Include="Scripts\jquery-1.10.2.min.js">
-      <Paket>True</Paket>
-    </Content>
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js">
       <Paket>True</Paket>
@@ -225,9 +258,6 @@
     </Content>
     <Content Include="paket.references" />
     <None Include="Project_Readme.html" />
-    <Content Include="Scripts\jquery-1.10.2.min.map">
-      <Paket>True</Paket>
-    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

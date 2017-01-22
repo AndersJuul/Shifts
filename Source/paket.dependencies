@@ -52,3 +52,5 @@ nuget bootstrap framework: >= net461
 nuget jQuery framework: >= net461
 nuget jQuery.Validation framework: >= net461
 nuget microsoft-web-helpers framework: >= net461
+nuget Selenium.WebDriver framework: >= net461
+nuget Selenium.Support framework: >= net461

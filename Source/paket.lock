@@ -116,6 +116,9 @@ NUGET
     OctoPack (3.4.7) - framework: >= net461
     Owin (1.0) - framework: >= net461
     Respond (1.4.2) - framework: >= net461
+    Selenium.Support (3.0.1) - framework: >= net461
+      Selenium.WebDriver (>= 3.0.1)
+    Selenium.WebDriver (3.0.1) - framework: >= net461
     Serilog (2.3) - framework: >= net461
     Serilog.Enrichers.Environment (2.1.1) - framework: >= net461
       Serilog (>= 2.0) - framework: >= net45, >= netstandard13

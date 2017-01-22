@@ -36,6 +36,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.MainWeb", "Shifts.Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.Web", "Shifts.Web\Shifts.Web.csproj", "{564C7FC3-D4C4-46CD-BE1C-003A2C15B85C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajf.Selenium", "Ajf.Selenium\Ajf.Selenium.csproj", "{4B1BE2E5-DC08-4B2B-99C4-B29287454575}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.SeleniumTests", "Shifts.SeleniumTests\Shifts.SeleniumTests.csproj", "{052D89F8-B862-4974-BCF9-93E0A2475842}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -90,6 +94,14 @@ Global
 		{564C7FC3-D4C4-46CD-BE1C-003A2C15B85C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{564C7FC3-D4C4-46CD-BE1C-003A2C15B85C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{564C7FC3-D4C4-46CD-BE1C-003A2C15B85C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B1BE2E5-DC08-4B2B-99C4-B29287454575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B1BE2E5-DC08-4B2B-99C4-B29287454575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B1BE2E5-DC08-4B2B-99C4-B29287454575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B1BE2E5-DC08-4B2B-99C4-B29287454575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{052D89F8-B862-4974-BCF9-93E0A2475842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{052D89F8-B862-4974-BCF9-93E0A2475842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{052D89F8-B862-4974-BCF9-93E0A2475842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{052D89F8-B862-4974-BCF9-93E0A2475842}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

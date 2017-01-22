@@ -10,9 +10,7 @@ namespace WebApplication1.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
-
-            return View();
+            return File(Server.MapPath("/Static/") + "index.htm", "text/html");
         }
     }
 }

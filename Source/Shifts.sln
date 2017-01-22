@@ -32,8 +32,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.Drivers.Web.Lib", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.Services", "Shifts.Services\Shifts.Services.csproj", "{34EA1536-01E7-499D-889F-7252DBD7C543}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.MainWeb", "Shifts.MainWeb\Shifts.MainWeb.csproj", "{3B80AA62-87B5-4BF7-83A5-6A1E69052269}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifts.Web", "Shifts.Web\Shifts.Web.csproj", "{564C7FC3-D4C4-46CD-BE1C-003A2C15B85C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajf.Selenium", "Ajf.Selenium\Ajf.Selenium.csproj", "{4B1BE2E5-DC08-4B2B-99C4-B29287454575}"
@@ -86,10 +84,6 @@ Global
 		{34EA1536-01E7-499D-889F-7252DBD7C543}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34EA1536-01E7-499D-889F-7252DBD7C543}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34EA1536-01E7-499D-889F-7252DBD7C543}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B80AA62-87B5-4BF7-83A5-6A1E69052269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B80AA62-87B5-4BF7-83A5-6A1E69052269}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B80AA62-87B5-4BF7-83A5-6A1E69052269}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B80AA62-87B5-4BF7-83A5-6A1E69052269}.Release|Any CPU.Build.0 = Release|Any CPU
 		{564C7FC3-D4C4-46CD-BE1C-003A2C15B85C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{564C7FC3-D4C4-46CD-BE1C-003A2C15B85C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{564C7FC3-D4C4-46CD-BE1C-003A2C15B85C}.Release|Any CPU.ActiveCfg = Release|Any CPU

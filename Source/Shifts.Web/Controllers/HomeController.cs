@@ -10,7 +10,7 @@ namespace WebApplication1.Controllers
     {
         public ActionResult Index()
         {
-            return File(Server.MapPath("/Static/") + "index.html", "text/html");
+            return File(Server.MapPath("Static/") + "index.html", "text/html");
         }
     }
 }

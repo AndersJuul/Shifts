@@ -281,7 +281,7 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="npm-start.ps1" />
+    <Content Include="npm-start.ps1" />
     <TypeScriptCompile Include="Static\app\about.component.ts" />
     <TypeScriptCompile Include="Static\app\app.component.spec.ts" />
     <TypeScriptCompile Include="Static\app\app.component.ts" />

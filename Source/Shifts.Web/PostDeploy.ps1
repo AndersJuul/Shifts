@@ -1,3 +1,3 @@
 cd Static
 npm install
-start-process npm start
+start-job npm start

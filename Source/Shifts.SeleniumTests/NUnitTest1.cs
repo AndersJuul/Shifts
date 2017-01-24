@@ -1,8 +1,5 @@
-﻿using System;
-using Ajf.Selenium;
+﻿using Ajf.Selenium;
 using NUnit.Framework;
-
-//using NUnit.Framework;
 
 namespace Shifts.SeleniumTests
 {

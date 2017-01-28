@@ -1,2 +1,1 @@
 ﻿npm start
-Get-Process

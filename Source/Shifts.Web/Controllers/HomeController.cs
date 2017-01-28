@@ -6,8 +6,9 @@ namespace WebApplication1.Controllers
     {
         public ActionResult Index()
         {
+            return View();
             //return File(Server.MapPath("Static/") + "index.html", "text/html");
-            return File("index.html", "text/html");
+            //return File("index.html", "text/html");
         }
     }
 }

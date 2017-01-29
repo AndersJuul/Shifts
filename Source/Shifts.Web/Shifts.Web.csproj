@@ -151,6 +151,11 @@
       <Paket>True</Paket>
     </Content>
     <Content Include="Global.asax" />
+    <Content Include="index.html" />
+    <Content Include="karma-test-shim.js" />
+    <Content Include="karma.conf.js" />
+    <Content Include="non-essential-files.txt" />
+    <Content Include="protractor.config.js" />
     <Content Include="Scripts\jquery-3.1.1-vsdoc.js">
       <Paket>True</Paket>
     </Content>
@@ -209,6 +214,9 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="PostDeploy.ps1" />
+    <Content Include=".travis.yml" />
+    <Content Include="LICENSE" />
+    <Content Include="package.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js">
@@ -232,15 +240,9 @@
     <Content Include="Scripts\respond.min.js">
       <Paket>True</Paket>
     </Content>
-    <Content Include="Static\favicon.ico" />
-    <Content Include="Static\index.html" />
-    <Content Include="Static\karma-test-shim.js" />
-    <Content Include="Static\karma.conf.js" />
-    <Content Include="Static\non-essential-files.txt" />
-    <Content Include="Static\protractor.config.js" />
-    <Content Include="Static\styles.css" />
-    <Content Include="Static\systemjs.config.extras.js" />
-    <Content Include="Static\systemjs.config.js" />
+    <Content Include="styles.css" />
+    <Content Include="systemjs.config.extras.js" />
+    <Content Include="systemjs.config.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -256,18 +258,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Static\.editorconfig" />
-    <Content Include="Static\.travis.yml" />
-    <Content Include="Static\CHANGELOG.md" />
-    <Content Include="Static\LICENSE" />
-    <Content Include="Static\package.json" />
-    <Content Include="Static\README.md" />
-    <Content Include="Static\tsconfig.json" />
-    <Content Include="Static\tslint.json" />
+    <Content Include="tsconfig.json" />
+    <Content Include="tslint.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Static\e2e\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff">
@@ -282,12 +277,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="npm-start.ps1" />
-    <TypeScriptCompile Include="Static\app\about.component.ts" />
-    <TypeScriptCompile Include="Static\app\app.component.spec.ts" />
-    <TypeScriptCompile Include="Static\app\app.component.ts" />
-    <TypeScriptCompile Include="Static\app\app.module.ts" />
-    <TypeScriptCompile Include="Static\app\main.ts" />
-    <TypeScriptCompile Include="Static\app\pairing.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

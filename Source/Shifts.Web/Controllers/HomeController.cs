@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace WebApplication1.Controllers
 {
@@ -10,7 +6,9 @@ namespace WebApplication1.Controllers
     {
         public ActionResult Index()
         {
-            return File(Server.MapPath("Static/") + "index.html", "text/html");
+            return View();
+            //return File(Server.MapPath("Static/") + "index.html", "text/html");
+            //return File("index.html", "text/html");
         }
     }
 }

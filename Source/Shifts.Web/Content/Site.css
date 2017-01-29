@@ -17,7 +17,7 @@ textarea {
 }
 
 .DEV {
-    background-color: green;
+    background-color: lightgreen;
 }
 
 .QA {
@@ -25,5 +25,5 @@ textarea {
 }
 
 .PROD {
-    background-color: red;
+    /*background-color: red;*/
 }

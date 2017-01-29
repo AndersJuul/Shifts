@@ -5,7 +5,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@ViewBag.Title</title>
+    <title>@System.Configuration.ConfigurationManager.AppSettings["spaTitle"]</title>
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")

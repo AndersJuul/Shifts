@@ -118,6 +118,14 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\about.component.ts" />
+    <Content Include="app\app.component.spec.ts" />
+    <Content Include="app\app.component.ts" />
+    <Content Include="app\event-thumbnail.component.html" />
+    <Content Include="app\event-thumbnail.component.ts" />
+    <Content Include="app\events-list.component.ts" />
+    <Content Include="app\main.ts" />
+    <Content Include="app\pairing.component.ts" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap-theme.css.map">
       <Paket>True</Paket>

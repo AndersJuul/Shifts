@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Configuration;
+using System.Web.Mvc;
 
 namespace WebApplication1.Controllers
 {
@@ -6,7 +7,8 @@ namespace WebApplication1.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            //return View();
+            return File(ConfigurationManager.AppSettings["baseurl"] +"index.html", "text/html");
         }
     }
 }

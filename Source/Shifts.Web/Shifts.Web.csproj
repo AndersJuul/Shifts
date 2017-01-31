@@ -118,15 +118,23 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\event-details.component.html" />
+    <Content Include="app\event-details.component.ts" />
+    <Content Include="app\navbar.component.html" />
+    <Content Include="app\navbar.component.ts" />
+    <Content Include="app\toastr.service.ts" />
     <Content Include="app\about.component.ts" />
     <Content Include="app\app.component.spec.ts" />
     <Content Include="app\app.component.ts" />
+    <Content Include="app\app.module.ts" />
     <Content Include="app\event-thumbnail.component.html" />
     <Content Include="app\event-thumbnail.component.ts" />
+    <Content Include="app\event.service.ts" />
     <Content Include="app\events-list.component.ts" />
     <Content Include="app\main.ts" />
     <Content Include="app\pairing.component.ts" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="server.basehref.html" />
     <Content Include="Content\bootstrap-theme.css.map">
       <Paket>True</Paket>
     </Content>
@@ -159,6 +167,7 @@
       <Paket>True</Paket>
     </Content>
     <Content Include="Global.asax" />
+    <Content Include="basehref.html" />
     <Content Include="index.html" />
     <Content Include="karma-test-shim.js" />
     <Content Include="karma.conf.js" />
@@ -221,7 +230,9 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <Content Include="PostDeploy.ps1" />
+    <Content Include="PostDeploy.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include=".travis.yml" />
     <Content Include="LICENSE" />
     <Content Include="package.json" />

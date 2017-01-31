@@ -7,7 +7,7 @@ namespace WebApplication1.Controllers
         public ActionResult Index()
         {
             //return View();
-            return File("index.html", "text/html");
+            return File(Server.MapPath("/") +"index.html", "text/html");
         }
     }
 }

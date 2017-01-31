@@ -122,6 +122,7 @@
     <Content Include="app\event-details.component.ts" />
     <Content Include="app\navbar.component.html" />
     <Content Include="app\navbar.component.ts" />
+    <Content Include="app\routes.ts" />
     <Content Include="app\toastr.service.ts" />
     <Content Include="app\about.component.ts" />
     <Content Include="app\app.component.spec.ts" />

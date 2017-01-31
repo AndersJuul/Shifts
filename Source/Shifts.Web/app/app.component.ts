@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
     <nav-bar></nav-bar>
-	<events-list></events-list>
+	<router-outlet></router-outlet>
 	`,
 })
 export class AppComponent  { name = 'Angular ' + new Date().toLocaleTimeString(); }

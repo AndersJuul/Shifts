@@ -118,6 +118,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\event-details.component.html" />
+    <Content Include="app\event-details.component.ts" />
     <Content Include="app\navbar.component.html" />
     <Content Include="app\navbar.component.ts" />
     <Content Include="app\toastr.service.ts" />

@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
 	selector: 'nav-bar',
 	templateUrl: "app/navbar.component.html",
 	styles: [`
-	.pad-left {margin-left: 30px;}
-	.well  {color: #bbb;}
+	.nav.navbar-nav {font-size: 15px;}
+	#searchForm  {margin-right: 100px;}
 	`]
 })
 export class NavBarComponent {

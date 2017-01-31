@@ -7,10 +7,11 @@ import { EventThumbnailComponent} from './event-thumbnail.component'
 import { EventService } from './event.service'
 import { ToastrService} from './toastr.service'
 import { NavBarComponent } from './navbar.component'
+import { EventDetailsComponent } from './event-details.component'
 
 @NgModule({
 	imports: [BrowserModule],
-	declarations: [AppComponent, EventsListComponent, EventThumbnailComponent, NavBarComponent ],
+	declarations: [AppComponent, EventsListComponent, EventThumbnailComponent, NavBarComponent,EventDetailsComponent ],
 	providers: [EventService, ToastrService],
 	bootstrap: [AppComponent]
 })

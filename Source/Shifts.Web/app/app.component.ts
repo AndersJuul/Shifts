@@ -5,4 +5,4 @@ import { Component } from '@angular/core';
   template: `<h1>Hello {{name}}</h1>
   <events-list></events-list>`,
 })
-export class AppComponent  { name = 'Ang ular'; }
+export class AppComponent  { name = 'Angular ' + new Date().toLocaleTimeString(); }

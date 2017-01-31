@@ -118,6 +118,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\toastr.service.ts" />
     <Content Include="app\about.component.ts" />
     <Content Include="app\app.component.spec.ts" />
     <Content Include="app\app.component.ts" />
@@ -225,7 +226,9 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <Content Include="PostDeploy.ps1" />
+    <Content Include="PostDeploy.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include=".travis.yml" />
     <Content Include="LICENSE" />
     <Content Include="package.json" />

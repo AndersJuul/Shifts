@@ -129,6 +129,7 @@
     <Content Include="app\main.ts" />
     <Content Include="app\pairing.component.ts" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="server.basehref.html" />
     <Content Include="Content\bootstrap-theme.css.map">
       <Paket>True</Paket>
     </Content>
@@ -161,6 +162,7 @@
       <Paket>True</Paket>
     </Content>
     <Content Include="Global.asax" />
+    <Content Include="basehref.html" />
     <Content Include="index.html" />
     <Content Include="karma-test-shim.js" />
     <Content Include="karma.conf.js" />

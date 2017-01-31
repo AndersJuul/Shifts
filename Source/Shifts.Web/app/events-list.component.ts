@@ -19,9 +19,8 @@ export class EventsListComponent implements  OnInit {
 	constructor(private eventService: EventService, private toastrService: ToastrService) {
 	}
 
-	handleClick(data) {
+	handleClick(data:string) {
 		this.toastrService.success(data);
-		console.log(data);
 	}
 
 	ngOnInit() {

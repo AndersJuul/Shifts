@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { EventService  } from './event.service'
-import { ActivatedRoute } from '@angular/router'
+import { Router } from '@angular/router'
 
 @Component({
   templateUrl:'/app/create-event.component.html',
@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router'
 })
 export class CreateEventComponent implements  OnInit {
 	
-	constructor(private eventService: EventService, private route: ActivatedRoute) {
+	constructor(private eventService: EventService, private router: Router) {
 		
 	}
 
@@ -22,7 +22,7 @@ export class CreateEventComponent implements  OnInit {
 	}
 
 	cancel() {
-		
+		this.router.navigate(['/events'])
 	}
 
 	event : any;

@@ -11,10 +11,11 @@ import { NavBarComponent } from './navbar.component'
 import { EventDetailsComponent } from './event-details.component'
 import { appRoutes } from './routes'
 import { Routes } from '@angular/router'
+import { CreateEventComponent } from './create-event.component'
 
 @NgModule({
 	imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
-	declarations: [AppComponent, EventsListComponent, EventThumbnailComponent, NavBarComponent,EventDetailsComponent ],
+	declarations: [AppComponent, EventsListComponent, EventThumbnailComponent, NavBarComponent,EventDetailsComponent,CreateEventComponent  ],
 	providers: [EventService, ToastrService],
 	bootstrap: [AppComponent]
 })

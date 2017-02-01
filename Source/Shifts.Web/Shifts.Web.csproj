@@ -118,9 +118,11 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\404.component.ts" />
     <Content Include="app\create-event.component.html" />
     <Content Include="app\event-details.component.html" />
     <Content Include="app\event-details.component.ts" />
+    <Content Include="app\event-route-activator.service.ts" />
     <Content Include="app\navbar.component.html" />
     <Content Include="app\navbar.component.ts" />
     <Content Include="app\routes.ts" />

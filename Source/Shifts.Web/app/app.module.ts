@@ -21,8 +21,23 @@ import { EventRouteActivator } from './event-route-activator.service'
 		AppComponent, EventsListComponent, EventThumbnailComponent, NavBarComponent,
 		EventDetailsComponent, CreateEventComponent, Error404Component
 	],
-	providers: [EventService, ToastrService, EventRouteActivator],
+	providers: [
+		EventService,
+		ToastrService,
+		EventRouteActivator,
+		{
+			provide: 'canDeactivateCreateEvent',
+			useValue: checkDirtyState
+		}
+	],
 	bootstrap: [AppComponent]
 })
 export class AppModule {
+}
+
+function checkDirtyState(component: CreateEventComponent) {
+	if (component.isDirty) {
+		return window.confirm('You have unsaved changes, really cancel?');
+	}
+	return true;
 }

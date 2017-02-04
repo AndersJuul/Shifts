@@ -16,7 +16,7 @@ namespace Shifts.Drivers.Service.Web
 
             HostFactory.Run(factory =>
             {
-                factory.OnException(exception => { Log.Logger.Error(exception, "Topshelf xception"); });
+                //factory.OnException(exception => { Log.Logger.Error(exception, "Topshelf xception"); });
                 factory.Service<ServiceHost>(service =>
                 {
                     service.ConstructUsing(name => new ServiceHost());

@@ -1,16 +1,17 @@
-﻿using System;
-using System.Web.Http;
+﻿using System.Web.Http;
 using Shifts.Drivers.Contracts;
 
 namespace Shifts.Drivers.Web.Lib.Controllers
 {
-    [RoutePrefix("drivers")]
+    //[RoutePrefix("drivers")]
+    [Route("drivers")]
     public class DriversController : ApiController
     {
-        [Route("")]
         public IHttpActionResult Get()
         {
-            return Ok(new Driver());
+            var arr = new[] {new Driver {id = 1, name = "Anders"}};
+
+            return Ok(arr);
         }
     }
 }

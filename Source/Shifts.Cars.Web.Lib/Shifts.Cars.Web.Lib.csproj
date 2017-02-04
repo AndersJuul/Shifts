@@ -163,7 +163,7 @@
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v4.6.1' Or $(TargetFrameworkVersion) == 'v4.6.2' Or $(TargetFrameworkVersion) == 'v4.6.3')">
       <ItemGroup>
         <Reference Include="Topshelf">
-          <HintPath>..\packages\Topshelf\lib\net452\Topshelf.dll</HintPath>
+          <HintPath>..\packages\Topshelf\lib\net40-full\Topshelf.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
@@ -174,7 +174,7 @@
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v4.6.1' Or $(TargetFrameworkVersion) == 'v4.6.2' Or $(TargetFrameworkVersion) == 'v4.6.3')">
       <ItemGroup>
         <Reference Include="Topshelf.Serilog">
-          <HintPath>..\packages\Topshelf.Serilog\lib\net452\Topshelf.Serilog.dll</HintPath>
+          <HintPath>..\packages\Topshelf.Serilog\lib\net40-full\Topshelf.Serilog.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>

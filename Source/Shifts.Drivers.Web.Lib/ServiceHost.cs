@@ -16,7 +16,7 @@ namespace Shifts.Drivers.Web.Lib
 
             _baseAddress = ConfigurationManager.AppSettings["shifts.drivers.api.url"];
             _server = WebApp.Start<Startup>(_baseAddress);
-
+            
             Log.Logger.Information($"Server running at {_baseAddress}");
         }
 

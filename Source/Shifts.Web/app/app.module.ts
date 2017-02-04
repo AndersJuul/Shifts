@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router'
+import { HttpModule } from '@angular/http'
 
 import { AppComponent } from './app.component';
 import { EventsListComponent } from './events-list.component';
@@ -9,15 +10,17 @@ import { EventService } from './event.service'
 import { ToastrService} from './toastr.service'
 import { NavBarComponent } from './navbar.component'
 import { EventDetailsComponent } from './event-details.component'
-import { appRoutes } from './routes'
-import { Routes } from '@angular/router'
 import { CreateEventComponent } from './create-event.component'
 import { Error404Component } from './404.component'
-import { EventRouteActivator } from './event-route-activator.service'
+
 import { EventListResolverService } from './events-list-resolver.service'
 
+import { appRoutes } from './routes'
+import { Routes } from '@angular/router'
+import { EventRouteActivator } from './event-route-activator.service'
+
 @NgModule({
-	imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
+	imports: [BrowserModule, RouterModule.forRoot(appRoutes), HttpModule ],
 	declarations: [
 		AppComponent, EventsListComponent, EventThumbnailComponent, NavBarComponent,
 		EventDetailsComponent, CreateEventComponent, Error404Component

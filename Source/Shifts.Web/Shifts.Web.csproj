@@ -127,6 +127,7 @@
     <Content Include="app\events-list-resolver.service.ts" />
     <Content Include="app\navbar.component.html" />
     <Content Include="app\navbar.component.ts" />
+    <Content Include="app\new.component1.ts" />
     <Content Include="app\routes.ts" />
     <Content Include="app\toastr.service.ts" />
     <Content Include="app\about.component.ts" />

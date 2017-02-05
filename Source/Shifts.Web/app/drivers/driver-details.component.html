@@ -1,0 +1,24 @@
+<div class="container">
+    <img [src]="driver?.imageUrl" [alt]="driver?.name">
+
+    <div class="row">
+        <div class="col-md-11">
+            <h2>{{driver?.name}} </h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div><strong>Date:</strong> {{driver?.date}}</div>
+            <div><strong>Time:</strong> {{driver?.time}}</div>
+            <div><strong>Price:</strong> ${{driver?.price}}</div>
+        </div>
+        <div class="col-md-6">
+            <address>
+                <strong>Address:</strong><br />
+                {{driver?.location?.address}}<br />
+                {{driver?.location?.city}}, {{driver?.location?.country}}
+            </address>
+        </div>
+    </div>
+</div>

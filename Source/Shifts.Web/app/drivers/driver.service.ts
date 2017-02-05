@@ -1,25 +1,25 @@
 ﻿import { Injectable, EventEmitter } from '@angular/core'
 import { Subject, Observable } from 'rxjs/RX'
-import { IEvent } from './event.model'
+import { IDriver } from './driver.model'
 import { Http, Response } from '@angular/http'
 
 
 @Injectable()
-export class EventService {
+export class DriverService {
 	constructor(private http: Http) {}
 
-	getEvents(): Observable<IEvent[]> {
+	getDrivers(): Observable<IDriver[]> {
 		return this.http.get("/api/drivers")
 			.map(this.extractData)
 			.catch(this.handleError);
 	}
 
-	getEvent(id: number) {
-		return EVENTS.find(event => event.id === id);
+	getDriver(id: number) {
+		return EVENTS.find(driver => driver.id === id);
 	}
 
 	private extractData(res: Response) {
-		let body = <IEvent[]> res.json();
+		let body = <IDriver[]> res.json();
 		return body || {};
 	}
 

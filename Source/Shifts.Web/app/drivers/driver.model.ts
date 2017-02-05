@@ -1,4 +1,4 @@
-﻿export interface IEvent {
+﻿export interface IDriver {
   id: number;
   name: string;
 }

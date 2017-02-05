@@ -1,15 +1,15 @@
 import { Routes } from '@angular/router'
-import { EventDetailsComponent } from './event-details.component'
-import { EventsListComponent } from './events-list.component';
-import { CreateEventComponent } from './create-event.component'
+import { DriverDetailsComponent } from './drivers/driver-details.component'
+import { DriversListComponent } from './drivers/drivers-list.component';
+import { CreateDriverComponent } from './drivers/create-driver.component'
 import { Error404Component } from './404.component'
-import { EventRouteActivator } from './event-route-activator.service'
-import { EventListResolverService } from './events-list-resolver.service'
+import { DriverRouteActivator } from './drivers/driver-route-activator.service'
+import { DriversListResolverService } from './drivers/drivers-list-resolver.service'
 
 export const appRoutes: Routes = [
-	{ path: 'events', component: EventsListComponent, resolve: {events:EventListResolverService} },
-	{ path: 'events/new', component: CreateEventComponent, canDeactivate: ['canDeactivateCreateEvent'] },
-	{ path: 'events/:id', component: EventDetailsComponent, canActivate: [EventRouteActivator] },
+	{ path: 'drivers', component: DriversListComponent, resolve: {drivers:DriversListResolverService} },
+	{ path: 'drivers/new', component: CreateDriverComponent, canDeactivate: ['canDeactivateCreateDriver'] },
+	{ path: 'drivers/:id', component: DriverDetailsComponent, canActivate: [DriverRouteActivator] },
 	{ path: '404', component: Error404Component },
-	{ path: '', redirectTo: '/events', pathMatch: 'full' }
+	{ path: '', redirectTo: '/drivers', pathMatch: 'full' }
 ]

@@ -2,14 +2,14 @@ import { Component, Input } from '@angular/core';
 
 @Component({
 	moduleId: module.id,
-	selector: 'event-thumbnail',
-	templateUrl: "./event-thumbnail.component.html",
+	selector: 'driver-thumbnail',
+	templateUrl: "./driver-thumbnail.component.html",
 	styles: [`
 	.pad-left {margin-left: 30px;}
 	.well  {color: #bbb;}
 	`]
 })
-export class EventThumbnailComponent {
+export class DriverThumbnailComponent {
 	@Input()
-	event: any
+	driver: any
 }

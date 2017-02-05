@@ -4,34 +4,35 @@ import { RouterModule } from '@angular/router'
 import { HttpModule } from '@angular/http'
 
 import { AppComponent } from './app.component';
-import { EventsListComponent } from './events-list.component';
-import { EventThumbnailComponent} from './event-thumbnail.component'
-import { EventService } from './event.service'
+
+import { DriversListComponent } from './drivers/drivers-list.component';
+import { DriverThumbnailComponent} from './drivers/driver-thumbnail.component'
+import { DriverService } from './drivers/driver.service'
+import { DriverDetailsComponent } from './drivers/driver-details.component'
+import { CreateDriverComponent } from './drivers/create-driver.component'
+import { DriversListResolverService } from './drivers/drivers-list-resolver.service'
+import { DriverRouteActivator } from './drivers/driver-route-activator.service'
+
 import { ToastrService} from './toastr.service'
 import { NavBarComponent } from './navbar.component'
-import { EventDetailsComponent } from './event-details.component'
-import { CreateEventComponent } from './create-event.component'
 import { Error404Component } from './404.component'
-
-import { EventListResolverService } from './events-list-resolver.service'
 
 import { appRoutes } from './routes'
 import { Routes } from '@angular/router'
-import { EventRouteActivator } from './event-route-activator.service'
 
 @NgModule({
 	imports: [BrowserModule, RouterModule.forRoot(appRoutes), HttpModule ],
 	declarations: [
-		AppComponent, EventsListComponent, EventThumbnailComponent, NavBarComponent,
-		EventDetailsComponent, CreateEventComponent, Error404Component
+		AppComponent, DriversListComponent, DriverThumbnailComponent, NavBarComponent,
+		DriverDetailsComponent, CreateDriverComponent, Error404Component
 	],
 	providers: [
-		EventService,
+		DriverService,
 		ToastrService,
-		EventRouteActivator,
-		EventListResolverService,
+		DriverRouteActivator,
+		DriversListResolverService,
 		{
-			provide: 'canDeactivateCreateEvent',
+			provide: 'canDeactivateCreateDriver',
 			useValue: checkDirtyState
 		}
 	],
@@ -40,7 +41,7 @@ import { EventRouteActivator } from './event-route-activator.service'
 export class AppModule {
 }
 
-function checkDirtyState(component: CreateEventComponent) {
+function checkDirtyState(component: CreateDriverComponent) {
 	if (component.isDirty) {
 		return window.confirm('You have unsaved changes, really cancel?');
 	}

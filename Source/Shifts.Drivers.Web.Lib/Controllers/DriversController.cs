@@ -1,4 +1,9 @@
-﻿using System.Web.Http;
+﻿using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web.Http;
+using Dapper;
 using Shifts.Drivers.Contracts;
 
 namespace Shifts.Drivers.Web.Lib.Controllers
@@ -9,9 +14,11 @@ namespace Shifts.Drivers.Web.Lib.Controllers
     {
         public IHttpActionResult Get()
         {
-            var arr = new[] {new Driver {id = 1, name = "Anders"}};
-
-            return Ok(arr);
+            var connectionString = ConfigurationManager.ConnectionStrings["shiftDriversDb"].ConnectionString;
+            using (IDbConnection db = new SqlConnection(connectionString))
+            {
+                return Ok(db.Query<Driver>("Select * From Drivers").ToList());
+            }
         }
     }
 }

@@ -6,36 +6,37 @@ import { Http, Response } from '@angular/http'
 
 @Injectable()
 export class EventService {
-    constructor(private http: Http) {}
+	constructor(private http: Http) {}
 
-	getEvents() : Observable<IEvent[] > {
- return this.http.get("/api/drivers")
-                    .map(this.extractData)
-                    .catch(this.handleError);
-						}
+	getEvents(): Observable<IEvent[]> {
+		return this.http.get("/api/drivers")
+			.map(this.extractData)
+			.catch(this.handleError);
+	}
 
 	getEvent(id: number) {
 		return EVENTS.find(event => event.id === id);
 	}
 
-   private extractData(res: Response) {
-      let body =<IEvent[]> res.json();
-      return body || { };
-    }
-	 private handleError (error: Response | any) {
-    // In a real world app, we might use a remote logging infrastructure
-    let errMsg: string;
-    if (error instanceof Response) {
-      const body = error.json() || '';
-      const err = body.error || JSON.stringify(body);
-      errMsg = `${error.status} - ${error.statusText || ''} ${err}`;
-    } else {
-      errMsg = error.message ? error.message : error.toString();
-    }
-    console.error(errMsg);
-    return Observable.throw(errMsg);
-  }
+	private extractData(res: Response) {
+		let body = <IEvent[]> res.json();
+		return body || {};
 	}
+
+	private handleError(error: Response | any) {
+		// In a real world app, we might use a remote logging infrastructure
+		let errMsg: string;
+		if (error instanceof Response) {
+			const body = error.json() || '';
+			const err = body.error || JSON.stringify(body);
+			errMsg = `${error.status} - ${error.statusText || ''} ${err}`;
+		} else {
+			errMsg = error.message ? error.message : error.toString();
+		}
+		console.error(errMsg);
+		return Observable.throw(errMsg);
+	}
+}
 
 const EVENTS =
 [

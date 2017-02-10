@@ -22,7 +22,7 @@ export class CreateDriverComponent implements  OnInit {
 	}
 
 	cancel() {
-		this.router.navigate(['/driver'])
+	    this.router.navigate(['/driver']);
 	}
 
 	driver : any;

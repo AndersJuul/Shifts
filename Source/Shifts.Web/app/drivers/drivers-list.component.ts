@@ -9,7 +9,7 @@ import { IDriver} from './driver.model'
 	moduleId: module.id,
 	selector: 'drivers-list',
 	template: `
-			<div>
+			<div >
 				<h1>Registrerede chauffører</h1>
 				<hr>
 				<div *ngFor="let driver of drivers">
